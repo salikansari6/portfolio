@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -7,8 +7,14 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
 
   const toggleNav = () => {
-    setNav((nav) => !nav);
+    setNav((prevState) => !prevState);
   };
+
+  useEffect(() => {
+    router.events.on("routeChangeStart", () => {
+      toggleNav();
+    });
+  }, []);
 
   return (
     <div className="flex p-3 justify-between fixed bg-white w-screen items-center">
@@ -19,9 +25,21 @@ const Navbar = () => {
         onClick={toggleNav}
         className="hamburger-menu-btn z-10 lg:hidden flex flex-col h-5 w-8 justify-between mr-1"
       >
-        <div className="h-0.5 bg-black"></div>
-        <div className="h-0.5 bg-black"></div>
-        <div className="h-0.5 bg-black"></div>
+        <div
+          className={`h-0.5 ${
+            nav
+              ? "bg-white transform transition delay-300 transition-duration-500 transition-de rotate-45 translate-y-2"
+              : "bg-black"
+          }`}
+        ></div>
+        <div
+          className={`h-0.5 ${
+            nav
+              ? "bg-white transform transition delay-300 transition-duration-500 transition-de -rotate-45"
+              : "bg-black"
+          }`}
+        ></div>
+        <div className={`h-0.5 ${nav ? "" : "bg-black"}`}></div>
       </button>
       <nav
         className={`fixed transition duration-500 inset-0 bg-opacity-90 bg-black text-white  w-screen transform ${
