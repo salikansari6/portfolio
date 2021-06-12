@@ -1,9 +1,8 @@
 @tailwind base;
-
 @tailwind components;
-
 @tailwind utilities;
+@tailwind screens;
 
 .active {
-  @apply border-b-2 border-black;
+  @apply border-white border-b-2 lg:border-black;
 }
