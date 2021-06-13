@@ -4,5 +4,5 @@
 @tailwind screens;
 
 .active {
-  @apply border-white border-b-2 lg:border-black;
+  @apply border-white border-b-4 lg:border-black pb-2;
 }
