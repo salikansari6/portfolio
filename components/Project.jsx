@@ -4,14 +4,15 @@ import Image from "next/image";
 const Project = ({ name, images, description, sourceCode, demo, stack }) => {
   return (
     <div className="project shadow rounded hover:shadow-lg transition duration-200 transform hover:scale-105 relative">
-      <div className="project-image shadow-inner h-52 w-full relative">
+      <div className="project-image shadow-inner h-52 w-full relative ">
         <Image
           src={`/images/${images[0]}.png`}
           layout="fill"
-          className="rounded-t"
+          className="rounded-t "
           objectFit="cover"
           objectPosition="top"
         />
+        <div className="bg-gradient-to-t from-transparent via-transparent to-gray-900 absolute inset-0 w-full h-full opacity-50 "></div>
       </div>
       <div className="project-details">
         <div className="project-name p-5 bg-yellow-50 text-2xl text-center font-bold">
@@ -42,7 +43,7 @@ const Project = ({ name, images, description, sourceCode, demo, stack }) => {
       <div className="stack flex justify-end absolute -top-10 right-0">
         {stack.map((tech) => {
           return (
-            <div className="h-14 w-14 lg:h-16 lg:w-16 p-3 shadow  bg-yellow-50 rounded-full">
+            <div className="h-14 w-14 lg:h-16 lg:w-16 p-3 shadow -ml-3 bg-yellow-50 rounded-full">
               <Image
                 src={`https://raw.githubusercontent.com/salikansari6/githubProfileReadmeGenerator/main/icons/${tech}.svg`}
                 height={50}
