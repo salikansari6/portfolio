@@ -17,7 +17,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="flex p-3 justify-between fixed bg-white w-screen items-center">
+    <div className="flex p-3 justify-between fixed bg-white w-screen items-center z-10">
       <div className="brand text-2xl lg:text-4xl font-bold justify-self-start">
         SALIK ANSARI
       </div>
@@ -49,19 +49,29 @@ const Navbar = () => {
         <ul className="flex h-1/2 items-center text-3xl flex-col lg:text-base lg:flex-row lg:h-auto justify-around">
           <li>
             <Link href="/">
-              <a className={router.pathname === "/" && "active"}>HOME</a>
+              <a className={router.pathname === "/" ? "active" : undefined}>
+                HOME
+              </a>
             </Link>
           </li>
           <li>
             <Link href="/portfolio">
-              <a className={router.pathname === "/portfolio" && "active"}>
+              <a
+                className={
+                  router.pathname === "/portfolio" ? "active" : undefined
+                }
+              >
                 PORTFOLIO
               </a>
             </Link>
           </li>
           <li>
             <Link href="/contact">
-              <a className={router.pathname === "/contact" && "active"}>
+              <a
+                className={
+                  router.pathname === "/contact" ? "active" : undefined
+                }
+              >
                 CONTACT
               </a>
             </Link>

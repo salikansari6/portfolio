@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Word Race",
+    "sourceCode": "https://github.com/salikansari6/word-race-client",
+    "demo": "https://word-race.netlify.app/",
+    "images": ["word-race"],
+    "description": "Typing Speed Game made using the MERN Stack in which users can Sign Up, Log in, save their scores and see the leaderboard and see user statistics like average score and number of games played",
+    "stack": ["react", "nodejs", "express", "mongodb"]
+  },
+  {
+    "name": "Github Search Engine",
+    "sourceCode": "https://github.com/salikansari6/github-clone-deploy",
+    "demo": "https://github-oauth-app.netlify.app/",
+    "images": ["github-search-engine", "github-seach-results"],
+    "description": "Search-Engine like single page app for searching GitHub users and repositories along with custom lazy loading for lists (Infinite Scrolling). Made with the help of using Github API and zero external libraries using only vanilla React",
+    "stack": ["react", "nodejs", "express"]
+  },
+  {
+    "name": "react-preloader-tmnt",
+    "sourceCode": "https://github.com/salikansari6/react-preloader-tmnt",
+    "demo": "https://www.npmjs.com/package/react-preloader-tmnt",
+    "images": ["spinner", "slim-progress"],
+    "description": "Preloader component library for React Applications which provides Preloader UI Components like indicators of various kinds that you can use and configure while your app or components are in loading state",
+    "stack": ["react", "storybook", "npm", "rollup"]
+  }
+]

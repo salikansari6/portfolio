@@ -9,12 +9,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="pt-20 lg:pt-0">
-        <div className="h-screen lg:h-screen hero flex flex-col items-center  lg:flex-row justify-center lg:items-start">
+        <div className="h-screen lg:h-screen hero flex flex-col items-center  lg:flex-row justify-around lg:items-start">
           <div className="intro text-center w-5/6 lg:text-left lg:w-1/3 lg:mt-32">
-            <p className="name text-4xl lg:text-7xl">I am Salik Ansari</p>
-            <p className="work-title text-2xl lg:text-3xl italic font-thin ">
-              A Full-Stack Developer
-            </p>
+            <div className="bg-yellow-50 rounded shadow p-2 lg:bg-transparent lg:shadow-none">
+              <p className="name text-4xl lg:text-7xl">I am Salik Ansari</p>
+              <p className="work-title text-2xl lg:text-3xl italic font-thin ">
+                A Full-Stack Developer
+              </p>
+            </div>
             <p className="bio bg-yellow-50 rounded-md shadow-lg   p-5 text-xl text-justify mt-8">
               I am a Final Year Computer Engineering Student and a Software
               Engineer. I have a passion for building and coding User Interfaces
@@ -28,7 +30,7 @@ export default function Home() {
           </div>
           <img
             src="/images/hero_image.png"
-            className="h-1/2  order-first lg:order-last  lg:w-1/4 lg:h-2/3"
+            className="h-1/2  order-first lg:order-last  lg:w-1/4 lg:h-2/3 opacity-70"
           />
         </div>
       </main>
