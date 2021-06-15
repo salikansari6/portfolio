@@ -8,7 +8,7 @@ export default function Home() {
         <title>Salik Ansari - Full Stack Developer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="py-20 lg:pt-0  lg:px-20 xl:px-38 2xl:px-56">
+      <main className="py-5 lg:py-20 lg:pt-0  lg:px-20 xl:px-38 2xl:px-56">
         <div className="hero flex flex-col items-center  lg:flex-row justify-around lg:items-center">
           <div className="intro text-center w-5/6 lg:text-left lg:w-1/2 lg:mt-32">
             <div className="bg-yellow-50 rounded shadow p-2 lg:bg-transparent lg:shadow-none">

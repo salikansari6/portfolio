@@ -21,30 +21,30 @@ const Navbar = () => {
       <div className="brand text-2xl lg:text-4xl font-bold justify-self-start">
         SALIK ANSARI
       </div>
-      <button
+      <div
         onClick={toggleNav}
         className="hamburger-menu-btn z-10 lg:hidden flex flex-col h-5 w-8 justify-between mr-1"
       >
         <div
           className={`h-0.5 ${
             nav
-              ? "bg-white transform transition delay-300 transition-duration-500 transition-de rotate-45 translate-y-2"
-              : "bg-black"
+              ? "bg-white transform transition delay-300 transition-duration-500  rotate-45 translate-y-2"
+              : "bg-purple-800"
           }`}
         ></div>
         <div
           className={`h-0.5 ${
             nav
-              ? "bg-white transform transition delay-300 transition-duration-500 transition-de -rotate-45"
-              : "bg-black"
+              ? "bg-white transform transition delay-300 transition-duration-500  -rotate-45"
+              : "bg-purple-800"
           }`}
         ></div>
-        <div className={`h-0.5 ${nav ? "" : "bg-black"}`}></div>
-      </button>
+        <div className={`h-0.5 ${nav ? "" : "bg-purple-800"}`}></div>
+      </div>
       <nav
-        className={`fixed transition duration-500 inset-0 bg-opacity-90 bg-black text-white  w-screen transform ${
+        className={`fixed transition duration-500 inset-0 bg-opacity-90 bg-purple-800 text-white  w-screen transform ${
           nav ? "translate-x-0" : "translate-x-nav"
-        }  lg:h-auto lg:translate-x-0 lg:w-1/4 lg:text-black lg:bg-transparent lg:relative`}
+        }  lg:h-auto lg:translate-x-0 lg:w-1/4 lg:text-purple-800 lg:bg-transparent lg:relative`}
       >
         <ul className="flex h-1/2 items-center text-3xl flex-col lg:text-base lg:flex-row lg:h-auto justify-around">
           <li>
