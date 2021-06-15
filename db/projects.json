@@ -12,7 +12,7 @@
     "name": "Github Search Engine",
     "sourceCode": "https://github.com/salikansari6/github-clone-deploy",
     "demo": "https://github-oauth-app.netlify.app/",
-    "images": ["github-search-engine", "github-seach-results"],
+    "images": ["github-search-engine", "github-search-results"],
     "description": "Search-Engine like single page app for searching GitHub users and repositories along with custom lazy loading for lists (Infinite Scrolling). Made with the help of using Github API and zero external libraries using only vanilla React",
     "stack": ["reactjs", "nodejs", "express"],
     "slug": "github-search-engine"

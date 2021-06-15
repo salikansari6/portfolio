@@ -6,3 +6,43 @@
 .active {
   @apply border-white border-b-4 lg:border-black pb-2;
 }
+
+.image-gallery {
+  height: 600px;
+}
+
+@media (max-width: 640px) {
+  .image-gallery {
+    height: 400px;
+  }
+}
+
+@media (max-width: 1536px) {
+  .image-gallery {
+    height: 350px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .image-gallery {
+    height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-item {
+    height: 70px;
+  }
+}
+
+@media (max-width: 640px) {
+  .image-gallery {
+    height: 350px;
+  }
+}
+
+@media (max-width: 576px) {
+  .image-gallery {
+    height: 250px;
+  }
+}
