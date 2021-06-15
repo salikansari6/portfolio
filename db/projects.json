@@ -5,7 +5,8 @@
     "demo": "https://word-race.netlify.app/",
     "images": ["word-race"],
     "description": "Typing Speed Game made using the MERN Stack in which users can Sign Up, Log in, save their scores and see the leaderboard and see user statistics like average score and number of games played",
-    "stack": ["reactjs", "nodejs", "express", "mongodb"]
+    "stack": ["reactjs", "nodejs", "express", "mongodb"],
+    "slug": "word-race"
   },
   {
     "name": "Github Search Engine",
@@ -13,7 +14,8 @@
     "demo": "https://github-oauth-app.netlify.app/",
     "images": ["github-search-engine", "github-seach-results"],
     "description": "Search-Engine like single page app for searching GitHub users and repositories along with custom lazy loading for lists (Infinite Scrolling). Made with the help of using Github API and zero external libraries using only vanilla React",
-    "stack": ["reactjs", "nodejs", "express"]
+    "stack": ["reactjs", "nodejs", "express"],
+    "slug": "github-search-engine"
   },
   {
     "name": "react-preloader-tmnt",
@@ -21,6 +23,7 @@
     "demo": "https://www.npmjs.com/package/react-preloader-tmnt",
     "images": ["spinner", "slim-progress"],
     "description": "Preloader component library for React Applications which provides Preloader UI Components like indicators of various kinds that you can use and configure while your app or components are in loading state",
-    "stack": ["reactjs", "storybook", "npm", "rollup"]
+    "stack": ["reactjs", "storybook", "npm", "rollup"],
+    "slug": "react-preloader-tmnt"
   }
 ]

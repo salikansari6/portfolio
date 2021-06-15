@@ -26,7 +26,7 @@ const Project = ({ name, images, description, sourceCode, demo, stack }) => {
             href={sourceCode}
             target="blank"
             rel="noreferrer"
-            className="source-code bg-red-400  w-1/3 p-2  flex items-center justify-center text-center text-white font-bold rounded"
+            className="source-code bg-red-400 shadow w-1/3 p-2  flex items-center justify-center text-center text-white font-bold rounded"
           >
             Source Code <span className="font-black">&lt;/&gt;</span>
           </a>
@@ -34,7 +34,7 @@ const Project = ({ name, images, description, sourceCode, demo, stack }) => {
             href={demo}
             target="blank"
             rel="noreferrer"
-            className="bg-red-400  text-white w-1/3 p-2 flex items-center justify-center text-center font-bold rounded"
+            className="bg-red-400  text-white shadow w-1/3 p-2 flex items-center justify-center text-center font-bold rounded"
           >
             Demo
           </a>
