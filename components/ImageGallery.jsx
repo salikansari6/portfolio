@@ -29,7 +29,7 @@ const ImageGallery = ({ images }) => {
         <Image
           src={`/images/${currentImage}.png`}
           layout="fill"
-          className="rounded-lg"
+          className="rounded"
           objectFit="cover"
           objectPosition="center top"
         />
@@ -37,7 +37,11 @@ const ImageGallery = ({ images }) => {
       {images.map((image) => {
         return (
           <div
-            className="gallery-item col-span-3 lg:col-span-2 border border-pink-200 row-span-1 relative rounded-lg cursor-pointer"
+            className={`gallery-item col-span-3 lg:col-span-2   row-span-1 relative rounded-lg cursor-pointer ${
+              image === currentImage
+                ? "border-2 border-pink-500"
+                : "border border-pink-200"
+            }`}
             onClick={() => changeImage(image)}
           >
             <Image
