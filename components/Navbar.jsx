@@ -12,7 +12,7 @@ const Navbar = () => {
 
   useEffect(() => {
     router.events.on("routeChangeStart", () => {
-      toggleNav();
+      setNav(false);
     });
   }, []);
 

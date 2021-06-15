@@ -13,17 +13,17 @@ const Project = ({
 }) => {
   return (
     <div className="project shadow rounded hover:shadow-lg transition duration-200 transform hover:scale-105 relative">
-      <Link href={`/${slug}`}>
+      <Link href={`/portfolio/${slug}`}>
         <a>
-          <div className="project-image shadow-inner h-52 w-full relative ">
+          <div className="project-image shadow-inner h-52 w-full relative rounded-t">
             <Image
               src={`/images/${images[0]}.png`}
               layout="fill"
-              className="rounded-t "
+              className="rounded-t"
               objectFit="cover"
               objectPosition="top"
             />
-            <div className="bg-gradient-to-t from-transparent via-transparent to-gray-900 absolute inset-0 w-full h-full opacity-50 "></div>
+            <div className="bg-gradient-to-t rounded-t from-transparent via-transparent to-gray-900 absolute inset-0 w-full h-full opacity-50 "></div>
           </div>
           <div className="project-details">
             <div className="project-name p-5 bg-yellow-50 text-2xl text-center font-bold">
