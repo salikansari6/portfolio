@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
-      <div className="pt-20">
+      <div className="py-20 min-h-screen">
         <Component {...pageProps} />
       </div>
     </Layout>
