@@ -56,7 +56,7 @@ const Project = ({
       <div className="stack flex justify-end absolute -top-10 right-0">
         {stack.map((tech) => {
           return (
-            <div className="h-14 w-14 lg:h-16 lg:w-16 p-3 shadow -ml-3 bg-pink-50 opacity-90 rounded-full">
+            <div className="h-14 w-14 lg:h-16 lg:w-16 p-3 shadow -ml-3 bg-purple-50 opacity-90 rounded-full">
               <Image
                 src={`https://raw.githubusercontent.com/salikansari6/githubProfileReadmeGenerator/main/icons/${tech}.svg`}
                 height={50}

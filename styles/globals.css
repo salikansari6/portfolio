@@ -30,9 +30,9 @@
 }
 
 @media (max-width: 768px) {
-  .gallery-item {
+  /* .gallery-item {
     height: 70px;
-  }
+  } */
 }
 
 @media (max-width: 640px) {

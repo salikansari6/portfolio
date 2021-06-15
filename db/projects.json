@@ -4,8 +4,9 @@
     "sourceCode": "https://github.com/salikansari6/word-race-client",
     "demo": "https://word-race.netlify.app/",
     "images": ["word-race"],
-    "description": "Typing Speed Game made using the MERN Stack in which users can Sign Up, Log in, save their scores and see the leaderboard and see user statistics like average score and number of games played",
+    "description": "Typing Speed Game made using the MERN Stack in which users can Sign Up, Log in, save their scores and see the leaderboard and see user statistics like average score and number of games played. Mounting and Unmounting animations are done with the help on React-Transition-Group (Library for React Animations).I have used Express for the backend framework which makes creating REST API easier.There are 2 primary routes, one for Authorization, for User’s StatsI used JWT Token authentication system for implementing the auth part. The auth part is pretty standard which conists of simple GET and POST requests.The only significant part mentioning about the backend is the User Stats route to display average score, No. Of games played and Max Level as it required aggregation queries for the database ",
     "stack": ["reactjs", "nodejs", "express", "mongodb"],
+    "formattedStackNames": ["ReactJS", "NodeJS", "Express", "MongoDB"],
     "slug": "word-race"
   },
   {
@@ -13,8 +14,9 @@
     "sourceCode": "https://github.com/salikansari6/github-clone-deploy",
     "demo": "https://github-oauth-app.netlify.app/",
     "images": ["github-search-engine", "github-search-results"],
-    "description": "Search-Engine like single page app for searching GitHub users and repositories along with custom lazy loading for lists (Infinite Scrolling). Made with the help of using Github API and zero external libraries using only vanilla React",
+    "description": "Search-Engine like single page app for searching GitHub users and repositories along with custom lazy loading for lists (Infinite Scrolling). Made with the help of using Github API and zero external libraries using only vanilla React.Animations made from scratch using CSS Animations.Pie-Chart rendered by using dynamic SVGs without any library.Routing done by using only History API without the help of any external Routing libraries. It has a separate backend for Authentication as the Github API didn't support CORS for auth. So I made a reverse proxy for Auth requests for returning the Auth token",
     "stack": ["reactjs", "nodejs", "express"],
+    "formattedStackNames": ["ReactJS", "NodeJS", "Express"],
     "slug": "github-search-engine"
   },
   {
@@ -22,8 +24,9 @@
     "sourceCode": "https://github.com/salikansari6/react-preloader-tmnt",
     "demo": "https://www.npmjs.com/package/react-preloader-tmnt",
     "images": ["spinner", "slim-progress"],
-    "description": "Preloader component library for React Applications which provides Preloader UI Components like indicators of various kinds that you can use and configure while your app or components are in loading state",
+    "description": "Preloader component library for React Applications which provides Preloader UI Components like indicators of various kinds that you can use and configure while your app or components are in loading state. This library has indicators such as Spinners, Dots, Bounce. User has to pass the loading state from their application to pass in the Preloader Component Provided by the Library. With v2.0, I have also introduced slim progress bars as seen on YouTube or Medium which would make your React application beautiful in the loading state. The components are highly customizable. The library user can change sizes of the indicators and colors too. ",
     "stack": ["reactjs", "storybook", "npm", "rollup"],
+    "formattedStackNames": ["ReactJS", "StoryBook", "NPM", "Rollup"],
     "slug": "react-preloader-tmnt"
   }
 ]

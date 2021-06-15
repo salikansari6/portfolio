@@ -17,7 +17,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="flex p-3 justify-between fixed bg-white w-screen items-center z-10">
+    <div className="flex p-3 justify-between fixed bg-purple-50 shadow w-screen items-center z-10">
       <div className="brand text-2xl lg:text-4xl font-bold justify-self-start">
         SALIK ANSARI
       </div>

@@ -12,7 +12,7 @@ const ImageGallery = ({ images }) => {
   useEffect(() => {
     const timerId = setTimeout(() => {
       setFadeAnimation(false);
-    }, 500);
+    }, 300);
 
     return () => {
       clearTimeout(timerId);
@@ -24,7 +24,7 @@ const ImageGallery = ({ images }) => {
       <div
         className={`current-image ${
           fadeAnimation ? "animate-fade-in" : ""
-        } col-span-12 row-span-3 lg:col-span-10 relative lg:row-span-4 border-2 rounded-lg border-pink-200`}
+        } col-span-12 row-span-3 lg:col-span-10 relative lg:row-span-4 border-2 rounded-lg border-purple-200`}
       >
         <Image
           src={`/images/${currentImage}.png`}
@@ -39,8 +39,8 @@ const ImageGallery = ({ images }) => {
           <div
             className={`gallery-item col-span-3 lg:col-span-2   row-span-1 relative rounded-lg cursor-pointer ${
               image === currentImage
-                ? "border-2 border-pink-500"
-                : "border border-pink-200"
+                ? "border-2 border-purple-700"
+                : "border border-purple-200"
             }`}
             onClick={() => changeImage(image)}
           >
