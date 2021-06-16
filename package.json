@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@tailwindcss/line-clamp": "^0.2.1",
+    "aos": "^2.3.4",
     "next": "latest",
     "next-images": "^1.7.0",
     "react": "^17.0.1",

@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-
 const Project = ({
   name,
   images,
@@ -12,7 +11,10 @@ const Project = ({
   slug,
 }) => {
   return (
-    <div className="project shadow rounded hover:shadow-lg transition duration-200 transform hover:scale-105 relative">
+    <div
+      data-aos="fade-up"
+      className="project shadow rounded hover:shadow-lg transition duration-200 transform hover:scale-105 relative"
+    >
       <Link href={`/portfolio/${slug}`}>
         <a>
           <div className="project-image shadow-inner h-52 w-full relative rounded-t">
