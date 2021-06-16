@@ -19,9 +19,13 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-between fixed bg-purple-50 shadow w-screen items-center z-10 lg:font-bold">
-      <div className="brand ml-5  relative h-16 w-36 lg:h-20 lg:w-52 justify-self-start lg:ml-10 ">
-        <Image src="/images/Logo.svg" layout="fill" />
-      </div>
+      <Link href="/">
+        <a>
+          <div className="brand ml-5  relative h-16 w-36 lg:h-20 lg:w-52 justify-self-start lg:ml-10 ">
+            <Image src="/images/Logo.svg" layout="fill" />
+          </div>
+        </a>
+      </Link>
       <div
         onClick={toggleNav}
         className="hamburger-menu-btn z-10 lg:hidden flex flex-col h-5 w-8 justify-between mr-5"
