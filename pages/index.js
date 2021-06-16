@@ -1,17 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
 import Skills from "../components/Skills";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 export default function Home() {
-  useEffect(() => {
-    AOS.init({
-      duration: 700,
-    });
-  }, []);
-
   return (
     <div>
       <Head>
