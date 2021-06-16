@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 const Navbar = () => {
   const router = useRouter();
@@ -17,13 +18,13 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="flex p-3 justify-between fixed bg-purple-50 shadow w-screen items-center z-10">
-      <div className="brand text-2xl lg:text-4xl font-bold justify-self-start">
-        SALIK ANSARI
+    <div className="flex justify-between fixed bg-purple-50 shadow w-screen items-center z-10 lg:font-bold">
+      <div className="brand ml-5  relative h-16 w-36 lg:h-20 lg:w-52 justify-self-start lg:ml-10 ">
+        <Image src="/images/Logo.svg" layout="fill" />
       </div>
       <div
         onClick={toggleNav}
-        className="hamburger-menu-btn z-10 lg:hidden flex flex-col h-5 w-8 justify-between mr-1"
+        className="hamburger-menu-btn z-10 lg:hidden flex flex-col h-5 w-8 justify-between mr-5"
       >
         <div
           className={`h-0.5 ${
