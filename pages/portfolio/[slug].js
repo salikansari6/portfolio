@@ -45,7 +45,7 @@ const ProjectPage = ({ project }) => {
           })}
         </ul>
       </div>
-      <div className="project-source flex justify-around py-5 shadow-inner">
+      <div className="project-source flex justify-around py-5 shadow bg-purple-50">
         <a
           href={project.sourceCode}
           target="blank"
