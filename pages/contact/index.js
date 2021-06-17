@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import Head from "next/head";
 
 const Contact = () => {
   const { register, handleSubmit, reset } = useForm();
@@ -31,6 +32,9 @@ const Contact = () => {
   };
   return (
     <div className="flex flex-col justify-center items-center">
+      <Head>
+        <title>Salik Ansari - Contact Me</title>
+      </Head>
       <div className="text-2xl bg-purple-50 shadow p-2 font-bold text-purple-800">
         Contact Me
       </div>

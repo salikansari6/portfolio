@@ -1,11 +1,15 @@
 import React from "react";
 import fs from "fs/promises";
 import path from "path";
+import Head from "next/head";
 import ProjectList from "../../components/ProjectList";
 
 const Portfolio = ({ projects }) => {
   return (
     <div className="portfolio">
+      <Head>
+        <title>Salik Ansari - Portfolio</title>
+      </Head>
       <h1 className="text-2xl lg:text-4xl font-medium text-center">
         Here's some of my work
       </h1>

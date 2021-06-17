@@ -2,11 +2,15 @@ import React from "react";
 import path from "path";
 import fs from "fs/promises";
 import Image from "next/image";
+import Head from "next/head";
 import ImageGallery from "../../components/ImageGallery";
 
 const ProjectPage = ({ project }) => {
   return (
     <main className="px-5 py-5 md:px-16 lg:px-24 xl:px-48 2xl:px-52 lg:pt-16">
+      <Head>
+        <title>Project - {project.name}</title>
+      </Head>
       <div className="center-wrap flex justify-center">
         <div className="inline-block mx-auto p-3 px-10 rounded shadow project-name bg-purple-100  text-2xl text-center mb-5 font-bold lg:text-6xl">
           {project.name}
