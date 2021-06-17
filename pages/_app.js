@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <Layout>
-      <div className="py-20 min-h-screen">
+      <div className="py-20 lg:py-24 xl:py-36 min-h-screen">
         <Component {...pageProps} />
       </div>
     </Layout>

@@ -2,11 +2,11 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div class="bg-purple-700 relative">
-      <footer class="flex flex-wrap items-center justify-between p-3 py-10 m-auto">
-        <div class="container mx-auto flex flex-col flex-wrap items-center justify-between">
-          <ul class="flex mx-auto text-white text-center">
-            <li class="p-2 cursor-pointer">
+    <div className="bg-purple-700 relative">
+      <footer className="flex flex-wrap items-center justify-between p-3 py-10 m-auto">
+        <div className="container mx-auto flex flex-col flex-wrap items-center justify-between">
+          <ul className="flex mx-auto text-white text-center">
+            <li className="p-2 cursor-pointer">
               <a
                 href="https://github.com/salikansari6"
                 target="blank"
@@ -48,7 +48,7 @@ const Footer = () => {
                 </svg>
               </a>
             </li>
-            <li class="p-2 cursor-pointer">
+            <li className="p-2 cursor-pointer">
               <a
                 href="https://www.instagram.com/salik.ibn.zulfi/"
                 target="blank"
@@ -56,7 +56,7 @@ const Footer = () => {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="fill-current text-white"
+                  className="fill-current text-white"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
@@ -69,7 +69,7 @@ const Footer = () => {
                 </svg>
               </a>
             </li>
-            <li class="p-2 cursor-pointer">
+            <li className="p-2 cursor-pointer">
               <a
                 href="https://twitter.com/SalikAnsari5"
                 target="blank"
@@ -77,7 +77,7 @@ const Footer = () => {
               ></a>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="fill-current text-white"
+                className="fill-current text-white"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
@@ -86,7 +86,7 @@ const Footer = () => {
               </svg>
             </li>
           </ul>
-          <div class="flex mx-auto text-white text-center">
+          <div className="flex mx-auto text-white text-center">
             Salik Ansari © 2021
           </div>
         </div>
