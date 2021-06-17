@@ -1,36 +1,73 @@
 import React from "react";
+import { useForm } from "react-hook-form";
 
 const Contact = () => {
+  const { register, handleSubmit, reset } = useForm();
+
+  const onSubmitForm = (values) => {
+    fetch("/api/contact", {
+      method: "POST",
+      body: JSON.stringify(values),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => {
+        if (res.ok) {
+          reset();
+        } else {
+          return res.json().then((err) => {
+            throw Error(err.message);
+          });
+        }
+        return res.json();
+      })
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((err) => {
+        console.error(err.message);
+      });
+  };
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="text-2xl bg-purple-50 shadow p-2 font-bold text-purple-800">
         Contact Me
       </div>
-      <form className="m-5 shadow bg-purple-50 rounded p-5 text-md lg:text-xl">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+      <form
+        onSubmit={handleSubmit(onSubmitForm)}
+        className="m-5 shadow bg-purple-50 rounded p-5 text-md lg:text-xl"
+      >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <div className="input-group my-2 ">
             <label htmlFor="first-name">First Name : </label>
             <input
+              required
+              {...register("firstName")}
               type="text"
-              name="first-name"
-              id="first-name"
+              name="firstName"
+              id="firstName"
               className="shadow rounded my-2 p-2 w-full"
             />
           </div>
           <div className="input-group my-2">
-            <label htmlFor="last-name">Last Name : </label>
+            <label htmlFor="lastName">Last Name : </label>
             <input
+              required
+              {...register("lastName")}
               type="text"
-              name="last-name"
-              id="last-name"
+              name="lastName"
+              id="lastName"
               className="shadow rounded my-2 p-2 w-full"
             />
           </div>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <div className="input-group my-2 ">
             <label htmlFor="email">Email : </label>
             <input
+              required
+              {...register("email")}
               type="email"
               name="email"
               id="email"
@@ -40,6 +77,7 @@ const Contact = () => {
           <div className="input-group my-2">
             <label htmlFor="phone">Phone : </label>
             <input
+              {...register("phone")}
               type="text"
               name="phone"
               id="phone"
@@ -50,12 +88,17 @@ const Contact = () => {
         <div className="input-group my-2">
           <label htmlFor="message">Message</label>
           <textarea
-            name="messgae"
+            required
+            {...register("message")}
+            name="message"
             id="message"
             className="w-full shadow rounded my-2 p-2"
             rows="5"
           ></textarea>
         </div>
+        <button type="submit" className="bg-purple-700 text-white p-3 shadow">
+          Submit
+        </button>
       </form>
     </div>
   );
