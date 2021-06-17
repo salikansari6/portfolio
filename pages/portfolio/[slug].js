@@ -18,7 +18,7 @@ const ProjectPage = ({ project }) => {
           Description :
         </h1>
         <div className="lg:grid lg:grid-cols-12">
-          <p className="bg-yellow-50 col-start-1 col-span-10 leading-relaxed lg:text-2xl rounded shadow p-5 mt-5">
+          <p className="bg-purple-50 col-start-1 col-span-10 leading-relaxed lg:text-2xl rounded shadow p-5 mt-5">
             {project.description}
           </p>
         </div>

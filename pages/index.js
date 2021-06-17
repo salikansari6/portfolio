@@ -22,7 +22,7 @@ export default function Home() {
                 A Full-Stack Developer
               </p>
             </div>
-            <p className="bio bg-purple-50 rounded-md shadow-lg  text-md  p-5 md:text-xl text-justify mt-8">
+            <p className="bio bg-purple-50  rounded-md shadow  text-md  p-5 md:text-xl text-justify mt-8">
               I am a Final Year Computer Engineering Student and a Software
               Engineer. I have a passion for building and coding User Interfaces
               for the Web and Mobile. I have had a knack for computers and tech

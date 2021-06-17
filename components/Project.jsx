@@ -28,7 +28,7 @@ const Project = ({
             <div className="bg-gradient-to-t rounded-t from-transparent via-transparent to-gray-900 absolute inset-0 w-full h-full opacity-50 "></div>
           </div>
           <div className="project-details">
-            <div className="project-name p-5 bg-yellow-50 text-2xl text-center font-bold">
+            <div className="project-name p-5 bg-purple-50 text-2xl text-center font-bold">
               {name}
             </div>
             <div className="project-description p-5 text-md lg:text-lg h-50 shadow-inner">
