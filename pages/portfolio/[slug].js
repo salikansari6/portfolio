@@ -45,6 +45,24 @@ const ProjectPage = ({ project }) => {
           })}
         </ul>
       </div>
+      <div className="project-source flex justify-around py-5 shadow-inner">
+        <a
+          href={project.sourceCode}
+          target="blank"
+          rel="noreferrer"
+          className="source-code bg-red-400 shadow w-1/3 p-2  lg:w-1/5 lg:py-5 lg:text-xl flex items-center justify-center text-center text-white font-bold rounded"
+        >
+          Source Code <span className="font-black">&lt;/&gt;</span>
+        </a>
+        <a
+          href={project.demo}
+          target="blank"
+          rel="noreferrer"
+          className="bg-red-400  text-white shadow w-1/3 p-2  lg:w-1/5 lg:py-5 lg:text-xl flex items-center justify-center text-center font-bold rounded"
+        >
+          Demo
+        </a>
+      </div>
     </main>
   );
 };
