@@ -28,5 +28,15 @@
     "stack": ["reactjs", "storybook", "npm", "rollup"],
     "formattedStackNames": ["ReactJS", "StoryBook", "NPM", "Rollup"],
     "slug": "react-preloader-tmnt"
+  },
+  {
+    "name": "Gym Management Sytem",
+    "sourceCode": "https://github.com/salikansari6/Gym-Website",
+    "demo": "http://mygym.epizy.com/login.php",
+    "images": ["gym1", "gym2", "gym3", "gym4", "gym5", "gym56"],
+    "description": "Dynamic website created with PHP for gym management system",
+    "stack": ["html", "css", "php", "mysql"],
+    "formattedStackNames": ["HTML", "CSS", "PHP", "MySQL"],
+    "slug": "gym-website"
   }
 ]
