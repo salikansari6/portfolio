@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import DownArrow from "./icons/DownArrow";
+
 const ImageGallery = ({ images }) => {
   const [currentImage, setCurrentImage] = useState(images[0]);
   const [fadeAnimation, setFadeAnimation] = useState(false);
@@ -48,11 +50,11 @@ const ImageGallery = ({ images }) => {
         />
       </div>
       <div
-        className="gallery pt-10 relative lg:col-span-2 lg:row-span-4  overflow-hidden p-5 shadow rounded box-content"
+        className="gallery pt-12  bg-purple-50 relative lg:col-span-2 lg:row-span-4  overflow-hidden p-5 shadow rounded box-content"
         ref={containerRef}
       >
         <button
-          className="absolute top-0 left-0 right-0 z-10 mx-auto"
+          className="absolute shadow top-1 left-0 grid  place-content-center rounded-full  h-1 w-1 right-0 mx-auto z-10  p-5 bg-white"
           onClick={() => {
             setMoveCarousel((prev) => {
               if (prev > 0) {
@@ -62,10 +64,10 @@ const ImageGallery = ({ images }) => {
             });
           }}
         >
-          Up
+          <DownArrow className="transform rotate-180" />
         </button>
         <button
-          className="absolute bottom-0 left-0 h-1 w-1 right-0 mx-auto z-10 rounded-full p-5 bg-white"
+          className="absolute shadow bottom-1 left-0 grid  place-content-center rounded-full  h-1 w-1 right-0 mx-auto z-10  p-5 bg-white"
           onClick={() => {
             setMoveCarousel((prev) => {
               if (prev < maxTranslate - containerHeight) {
@@ -75,7 +77,7 @@ const ImageGallery = ({ images }) => {
             });
           }}
         >
-          Down
+          <DownArrow />
         </button>
         <div
           className={`transition duration-500 transform `}
