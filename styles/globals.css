@@ -55,3 +55,12 @@
     height: 250px;
   }
 }
+
+/* .gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+} */

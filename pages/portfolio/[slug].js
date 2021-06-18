@@ -34,7 +34,7 @@ const ProjectPage = ({ project }) => {
         <ul className="list-inside p-5 list-disc text-2xl lg:flex">
           {project.formattedStackNames.map((tech) => {
             return (
-              <li className="flex items-center mt-3 lg:mr-5">
+              <li className="flex items-center mt-3 lg:mr-5" key={tech}>
                 <div className="h-14 w-14 lg:h-14 lg:w-14 p-2 mr-3 shadow  bg-purple-50  rounded-full">
                   <Image
                     src={`https://raw.githubusercontent.com/salikansari6/githubProfileReadmeGenerator/main/icons/${tech.toLowerCase()}.svg`}
