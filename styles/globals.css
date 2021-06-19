@@ -52,7 +52,7 @@
 
 @media (max-width: 576px) {
   .image-gallery {
-    height: 250px;
+    height: auto;
   }
 }
 

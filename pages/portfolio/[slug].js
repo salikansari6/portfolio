@@ -17,12 +17,12 @@ const ProjectPage = ({ project }) => {
         </div>
       </div>
       <ImageGallery images={project.images} />
-      <div className="project-description mt-5 ">
+      <div className="project-description  mt-5 ">
         <h1 className="text-lg  bg-purple-50 inline-block p-1 lg:p-3 rounded shadow font-bold  lg:text-4xl">
           Description :
         </h1>
         <div className="lg:grid lg:grid-cols-12">
-          <p className="bg-purple-50 col-start-1 col-span-10 leading-relaxed lg:text-2xl rounded shadow p-5 mt-5">
+          <p className="bg-purple-50 lg:col-start-1 lg:col-span-10 leading-relaxed lg:text-2xl rounded shadow p-5 mt-5">
             {project.description}
           </p>
         </div>
