@@ -19,7 +19,7 @@ const Project = ({
         <a>
           <div className="project-image shadow-inner h-52 w-full relative rounded-t">
             <Image
-              src={`/images/${images[0]}.png`}
+              src={`/images/${images[0]}`}
               layout="fill"
               className="rounded-t"
               objectFit="cover"

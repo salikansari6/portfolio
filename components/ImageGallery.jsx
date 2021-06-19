@@ -58,7 +58,7 @@ const ImageGallery = ({ images }) => {
         } col-span-12 row-span-3 lg:h-auto lg:col-span-10 relative lg:row-span-4 border-2 rounded-lg border-purple-200`}
       >
         <Image
-          src={`/images/${currentImage}.png`}
+          src={`/images/${currentImage}`}
           layout="fill"
           className="rounded"
           objectFit="cover"
@@ -120,7 +120,7 @@ const ImageGallery = ({ images }) => {
                 onClick={() => changeImage(image)}
               >
                 <Image
-                  src={`/images/${image}.png`}
+                  src={`/images/${image}`}
                   layout="fill"
                   className="rounded-lg"
                   objectFit="cover"
