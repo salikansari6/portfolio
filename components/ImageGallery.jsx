@@ -33,7 +33,6 @@ const ImageGallery = ({ images }) => {
       }
       return containerRef.current.clientHeight;
     });
-    console.log(maxTranslate);
   }, [isSmallDevice, galleryRef.current, containerRef.current]);
 
   const changeImage = (image) => {
