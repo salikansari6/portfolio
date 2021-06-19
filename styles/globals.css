@@ -42,11 +42,14 @@
   /* .gallery-item {
     height: 70px;
   } */
+  .image-gallery {
+    height: auto;
+  }
 }
 
 @media (max-width: 640px) {
   .image-gallery {
-    height: 350px;
+    height: auto;
   }
 }
 
