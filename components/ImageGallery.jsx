@@ -53,7 +53,7 @@ const ImageGallery = ({ images }) => {
   return (
     <div className="image-gallery block lg:grid lg:grid-cols-12 lg:grid-rows-4 gap-5">
       <div
-        className={`current-image h-56 md:h-96 mb-2 ${
+        className={`current-image h-56 md:h-96 lg:h-auto mb-2 ${
           fadeAnimation ? "animate-fade-in" : ""
         } col-span-12 row-span-3 lg:h-auto lg:col-span-10 relative lg:row-span-4 border-2 rounded-lg border-purple-200`}
       >
@@ -112,7 +112,7 @@ const ImageGallery = ({ images }) => {
             return (
               <div
                 key={image}
-                className={`gallery-item   flex-shrink-0 ml-5 lg:ml-0  h-20 relative w-32  lg:w-auto  rounded-lg lg:h-36  lg:mb-3 cursor-pointer ${
+                className={`gallery-item   flex-shrink-0 ml-5 lg:ml-0  h-20 relative w-32  lg:w-auto  rounded-lg   lg:mb-3 xl:h-20 2xl:h-36 cursor-pointer ${
                   image === currentImage
                     ? "border-2 border-purple-700"
                     : "border border-purple-200"
