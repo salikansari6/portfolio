@@ -7,6 +7,7 @@ const ImageGallery = ({ images }) => {
   const [fadeAnimation, setFadeAnimation] = useState(false);
   const [moveCarousel, setMoveCarousel] = useState(0);
   const [maxTranslate, setMaxTranslate] = useState(null);
+  const [showArrows, setShowArrows] = useState(false);
   const [isSmallDevice, setIsSmallDevice] = useState(false);
   const [containerHeight, setContainerHeight] = useState(null);
 
@@ -33,6 +34,12 @@ const ImageGallery = ({ images }) => {
       }
       return containerRef.current.clientHeight;
     });
+
+    if (galleryRef.current.clientHeight <= containerHeight) {
+      setShowArrows(false);
+    } else {
+      setShowArrows(true);
+    }
   }, [isSmallDevice, galleryRef.current, containerRef.current]);
 
   const changeImage = (image) => {
@@ -69,7 +76,7 @@ const ImageGallery = ({ images }) => {
         className="gallery p-2 block overflow-x-scroll lg:overflow-hidden relative lg:pt-12 col-span-12  bg-purple-50  lg:col-span-2 lg:row-span-4  lg:p-5 shadow rounded "
         ref={containerRef}
       >
-        {!isSmallDevice && (
+        {!isSmallDevice && showArrows && (
           <>
             <button
               className="absolute left-1 shadow lg:top-1 lg:left-0 grid  place-content-center rounded-full  h-1 w-1 right-0 lg:mx-auto z-10  p-5 bg-white"
