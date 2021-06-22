@@ -15,7 +15,7 @@ const Contact = () => {
     });
     console.log(snackbarCtx);
 
-    fetch("/api/contac", {
+    fetch("/api/contact", {
       method: "POST",
       body: JSON.stringify(values),
       headers: {
