@@ -4,7 +4,9 @@ export default class CustomDocument extends Document {
   render() {
     return (
       <Html>
-        <Head></Head>
+        <Head>
+          <meta property="og:image" content="/images/website-preview.png" />
+        </Head>
         <body>
           <Main />
         </body>
