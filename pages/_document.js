@@ -7,7 +7,6 @@ export default class CustomDocument extends Document {
         <Head></Head>
         <body>
           <Main />
-          <div id="snackbar"></div>
         </body>
         <NextScript />
       </Html>

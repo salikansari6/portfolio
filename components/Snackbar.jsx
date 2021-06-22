@@ -1,8 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React, { useState } from "react";
 
 const Snackbar = () => {
-  return <div></div>;
+  return <div>hello there</div>;
 };
 
-ReactDOM.render(<Snackbar />, document.getElementById("snackbar"));
+export default Snackbar;

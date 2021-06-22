@@ -62,11 +62,33 @@
   scrollbar-width: none; 
 } */
 
-#snackbar {
-  height: 50px;
+.snackbar {
+  height: 8vh;
   width: 100vw;
   position: fixed;
   left: 0;
   bottom: 0;
+  animation: slide-up 0.2s ease-in-out;
   background: red;
+}
+
+.slide-down {
+  animation: slide-down 0.2s ease-in-out;
+}
+@keyframes slide-down {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(8vh);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(8vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
