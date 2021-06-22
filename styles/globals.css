@@ -26,16 +26,7 @@
   }
 }
 
-/* @media (max-width: 1024px) {
-  .image-gallery {
-    height: 500px;
-  }
-} */
-
 @media (max-width: 768px) {
-  /* .gallery-item {
-    height: 70px;
-  } */
   .image-gallery {
     height: auto;
   }
@@ -46,30 +37,33 @@
     height: auto;
   }
 }
-/* 
-@media (max-width: 576px) {
-  .image-gallery {
-    height: auto;
-  }
-} */
-
-/* .gallery::-webkit-scrollbar {
-  display: none;
-}
-
-.gallery {
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
-} */
 
 .snackbar {
   height: 8vh;
   width: 100vw;
+  font-weight: bold;
+  font-size: 1.5rem;
   position: fixed;
   left: 0;
+  color: white;
+  display: flex;
   bottom: 0;
   animation: slide-up 0.2s ease-in-out;
-  background: red;
+}
+
+.snackbar__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.snackbar__message {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  flex-grow: 2;
+  flex-shrink: 1;
 }
 
 .slide-down {

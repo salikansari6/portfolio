@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
 import Head from "next/head";
+import SnackbarContext from "../../contexts/SnackbarContext";
 
 const Contact = () => {
+  const snackbarCtx = useContext(SnackbarContext);
   const { register, handleSubmit, reset } = useForm();
 
   const onSubmitForm = (values) => {
+    snackbarCtx.showSnackbar({
+      title: "Pending",
+      message: "Sending message...",
+      status: "pending",
+    });
+    console.log(snackbarCtx);
+
     fetch("/api/contact", {
       method: "POST",
       body: JSON.stringify(values),
@@ -25,6 +34,12 @@ const Contact = () => {
       })
       .then((data) => {
         console.log(data);
+        snackbarCtx.showSnackbar({
+          title: "Success!",
+          message: "Message sent successfully",
+          status: "success",
+        });
+        console.log(snackbarCtx);
       })
       .catch((err) => {
         console.error(err.message);
