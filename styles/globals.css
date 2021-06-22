@@ -42,7 +42,8 @@
   height: 8vh;
   width: 100vw;
   font-weight: bold;
-  font-size: 1.5rem;
+  padding: 1rem;
+  font-size: 1.2rem;
   position: fixed;
   left: 0;
   color: white;
@@ -57,12 +58,15 @@
   align-items: center;
   flex-grow: 1;
   flex-shrink: 1;
+  flex-basis: 500px;
 }
 .snackbar__message {
   display: flex;
-  padding: 1rem;
+
   align-items: center;
   flex-grow: 2;
+
+  flex-basis: 500px;
   flex-shrink: 1;
 }
 

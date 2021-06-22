@@ -15,7 +15,7 @@ const Contact = () => {
     });
     console.log(snackbarCtx);
 
-    fetch("/api/contact", {
+    fetch("/api/contac", {
       method: "POST",
       body: JSON.stringify(values),
       headers: {
@@ -43,6 +43,11 @@ const Contact = () => {
       })
       .catch((err) => {
         console.error(err.message);
+        snackbarCtx.showSnackbar({
+          title: "Error",
+          message: err.message || "Something went wrong",
+          status: "error",
+        });
       });
   };
   return (
