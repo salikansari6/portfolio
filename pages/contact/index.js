@@ -71,7 +71,7 @@ const Contact = () => {
               type="text"
               name="firstName"
               id="firstName"
-              className="shadow rounded my-2 p-2 w-full"
+              className="shadow-sm rounded my-2 p-2 w-full"
             />
           </div>
           <div className="input-group my-2">
@@ -82,7 +82,7 @@ const Contact = () => {
               type="text"
               name="lastName"
               id="lastName"
-              className="shadow rounded my-2 p-2 w-full"
+              className="shadow-sm rounded my-2 p-2 w-full"
             />
           </div>
         </div>
@@ -95,7 +95,7 @@ const Contact = () => {
               type="email"
               name="email"
               id="email"
-              className="shadow rounded my-2 p-2 w-full"
+              className="shadow-sm rounded my-2 p-2 w-full"
             />
           </div>
           <div className="input-group my-2">
@@ -105,7 +105,7 @@ const Contact = () => {
               type="text"
               name="phone"
               id="phone"
-              className="shadow rounded my-2 p-2 w-full"
+              className="shadow-sm rounded my-2 p-2 w-full"
             />
           </div>
         </div>
@@ -116,7 +116,7 @@ const Contact = () => {
             {...register("message")}
             name="message"
             id="message"
-            className="w-full shadow rounded my-2 p-2"
+            className="w-full shadow-sm rounded my-2 p-2"
             rows="5"
           ></textarea>
         </div>
