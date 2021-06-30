@@ -11,10 +11,7 @@ const Project = ({
   slug,
 }) => {
   return (
-    <div
-      data-aos="fade-up"
-      className="project shadow rounded hover:shadow-lg transition duration-200 transform hover:scale-105 relative"
-    >
+    <div className="project shadow transition duration-200 rounded transform hover:scale-105 hover:shadow-lg   relative">
       <Link href={`/portfolio/${slug}`}>
         <a>
           <div className="project-image shadow-inner h-52 w-full relative rounded-t">
