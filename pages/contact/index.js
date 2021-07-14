@@ -13,7 +13,6 @@ const Contact = () => {
       message: "Sending message...",
       status: "pending",
     });
-    console.log(snackbarCtx);
 
     fetch("/api/contact", {
       method: "POST",
@@ -33,13 +32,11 @@ const Contact = () => {
         return res.json();
       })
       .then((data) => {
-        console.log(data);
         snackbarCtx.showSnackbar({
           title: "Success!",
           message: "Message sent successfully",
           status: "success",
         });
-        console.log(snackbarCtx);
       })
       .catch((err) => {
         console.error(err.message);
