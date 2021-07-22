@@ -6,7 +6,7 @@ import SnackbarContext from "../contexts/SnackbarContext";
 
 const Layout = ({ children }) => {
   const { snackbar } = useContext(SnackbarContext);
-  console.log(snackbar);
+
   return (
     <>
       <Navbar />

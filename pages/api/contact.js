@@ -2,9 +2,6 @@ import nodemailer from "nodemailer";
 
 export default async function (req, res) {
   const { firstName, lastName, email, phone, message } = req.body;
-  console.log(process.env.user);
-  console.log(process.env.pass);
-
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 465,
@@ -25,7 +22,6 @@ export default async function (req, res) {
           <p>Message : ${message}</p>
           `,
     });
-    console.log("Message Sent", email.messageId);
   } catch (err) {
     console.log(err);
   }
