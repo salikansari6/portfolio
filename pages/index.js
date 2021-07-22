@@ -43,7 +43,7 @@ export default function Home({ projects }) {
           />
         </div>
         <div className="spacer h-0 lg:h-36"></div>
-        <MyWork projects={projects.slice(0, 2)} />
+        <MyWork projects={projects} />
         <Skills />
       </main>
     </div>
@@ -56,7 +56,7 @@ export async function getStaticProps(context) {
   const projects = JSON.parse(projectsJSON);
   return {
     props: {
-      projects: projects,
+      projects: projects.slice(0, 2),
     },
   };
 }
