@@ -1,7 +1,10 @@
 import Head from "next/head";
+import MyWork from "../components/MyWork";
 import Skills from "../components/Skills";
+import path from "path";
+import fs from "fs/promises";
 
-export default function Home() {
+export default function Home({ projects }) {
   return (
     <div>
       <Head>
@@ -39,9 +42,21 @@ export default function Home() {
             className="h-56  md:h-72 order-first lg:order-last  lg:w-1/3 lg:h-2/3 opacity-70 filter"
           />
         </div>
-        <div className="spacer h-20 lg:h-60"></div>
+        <div className="spacer h-0 lg:h-36"></div>
+        <MyWork projects={projects.slice(0, 2)} />
         <Skills />
       </main>
     </div>
   );
+}
+
+export async function getStaticProps(context) {
+  const filePath = path.join(process.cwd(), "db", "projects.json");
+  const projectsJSON = await fs.readFile(filePath);
+  const projects = JSON.parse(projectsJSON);
+  return {
+    props: {
+      projects: projects,
+    },
+  };
 }
