@@ -81,6 +81,9 @@ const Navbar = () => {
               </a>
             </Link>
           </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1mf5ksfBmVfsLSY0-1Lz8BrcDKodFZS5e/view?usp=drivesdk">RESUME</a>
+          </li>
         </ul>
       </nav>
     </div>
