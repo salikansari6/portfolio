@@ -11,7 +11,7 @@ const Skills = () => {
   return (
     <div className="skills p-10 md:p-20 lg:p-0">
       <div className="center-wrap flex justify-center">
-        <div className="text-xl lg:text-4xl text-center text-purple-700 font-bold bg-purple-50 inline-block p-3 rounded shadow">
+        <div className="text-xl lg:text-4xl text-center border border-purple-500 text-purple-700 font-bold bg-purple-50 inline-block p-3 rounded shadow">
           Technology and Tools I've worked with :
         </div>
       </div>

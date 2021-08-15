@@ -17,7 +17,7 @@ export default function Home({ projects }) {
             data-aos="fade-right"
             className="intro text-center px-8 lg:px-0 w-full lg:text-left lg:w-1/2 lg:mt-32"
           >
-            <div className="bg-purple-50 rounded shadow p-2 lg:bg-transparent lg:shadow-none">
+            <div className="bg-purple-50 border border-purple-400 lg:border-none  rounded shadow p-2 lg:bg-transparent lg:shadow-none">
               <p className="name text-2xl  md:text-4xl lg:text-7xl">
                 I am Salik Ansari
               </p>
@@ -25,7 +25,7 @@ export default function Home({ projects }) {
                 A Full-Stack Developer
               </p>
             </div>
-            <p className="bio bg-purple-50  rounded-md shadow  text-md  p-5 md:text-xl text-justify mt-8">
+            <p className="bio bg-purple-100  border border-purple-400 rounded-md shadow  text-md  p-5 md:text-xl text-justify mt-8">
               I am a Final Year Computer Engineering Student and a Software
               Engineer. I have a passion for building and coding User Interfaces
               for the Web and Mobile. I have had a knack for computers and tech

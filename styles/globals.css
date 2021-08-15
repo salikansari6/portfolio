@@ -9,7 +9,7 @@
 }
 
 .active {
-  @apply border-white border-b-4 lg:border-purple-800 pb-2;
+  @apply border-white border-b-4  pb-2;
 }
 
 .badge {

@@ -11,7 +11,7 @@ const Project = ({
   slug,
 }) => {
   return (
-    <div className="project shadow transition duration-200 rounded transform hover:scale-105 hover:shadow-lg   relative">
+    <div className="project shadow transition border border-purple-400 duration-200 rounded transform hover:scale-105 hover:shadow-lg   relative">
       <Link href={`/portfolio/${slug}`}>
         <a>
           <div className="project-image shadow-inner h-52 w-full relative rounded-t">
@@ -56,7 +56,7 @@ const Project = ({
         {stack.map((tech) => {
           return (
             <div
-              className="h-14 w-14 lg:h-16 lg:w-16 p-3 shadow -ml-3 bg-purple-50 opacity-90 rounded-full"
+              className="h-14 w-14 lg:h-16 lg:w-16 p-3 shadow border border-purple-500 -ml-3 bg-purple-50 opacity-90 rounded-full"
               key={tech}
             >
               <Image

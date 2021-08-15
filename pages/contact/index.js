@@ -52,12 +52,12 @@ const Contact = () => {
       <Head>
         <title>Salik Ansari - Contact Me</title>
       </Head>
-      <div className="text-2xl bg-purple-50 shadow p-2 font-bold text-purple-800">
+      <div className="text-2xl bg-purple-50 border border-purple-500 rounded shadow p-2 font-bold text-purple-800">
         Contact Me
       </div>
       <form
         onSubmit={handleSubmit(onSubmitForm)}
-        className="m-5 shadow bg-purple-50 rounded p-5 text-md lg:text-xl"
+        className="m-5 shadow bg-purple-50 border border-purple-500 rounded  p-5 text-md lg:text-xl"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <div className="input-group my-2 ">
@@ -68,7 +68,7 @@ const Contact = () => {
               type="text"
               name="firstName"
               id="firstName"
-              className="shadow-sm rounded my-2 p-2 w-full"
+              className="shadow-sm border border-purple-400 rounded my-2 p-2 w-full"
             />
           </div>
           <div className="input-group my-2">
@@ -79,7 +79,7 @@ const Contact = () => {
               type="text"
               name="lastName"
               id="lastName"
-              className="shadow-sm rounded my-2 p-2 w-full"
+              className="shadow-sm border border-purple-400 rounded my-2 p-2 w-full"
             />
           </div>
         </div>
@@ -92,7 +92,7 @@ const Contact = () => {
               type="email"
               name="email"
               id="email"
-              className="shadow-sm rounded my-2 p-2 w-full"
+              className="shadow-sm border border-purple-400 rounded my-2 p-2 w-full"
             />
           </div>
           <div className="input-group my-2">
@@ -102,7 +102,7 @@ const Contact = () => {
               type="text"
               name="phone"
               id="phone"
-              className="shadow-sm rounded my-2 p-2 w-full"
+              className="shadow-sm border border-purple-400 rounded my-2 p-2 w-full"
             />
           </div>
         </div>
@@ -113,11 +113,14 @@ const Contact = () => {
             {...register("message")}
             name="message"
             id="message"
-            className="w-full shadow-sm rounded my-2 p-2"
+            className="w-full border border-purple-400 shadow-sm rounded my-2 p-2"
             rows="5"
           ></textarea>
         </div>
-        <button type="submit" className="bg-purple-700 text-white p-3 shadow">
+        <button
+          type="submit"
+          className="bg-purple-600 rounded text-white p-3 shadow"
+        >
           Submit
         </button>
       </form>
