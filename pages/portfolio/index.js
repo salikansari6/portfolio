@@ -6,7 +6,7 @@ import ProjectList from "../../components/ProjectList";
 
 const Portfolio = ({ projects }) => {
   return (
-    <div className="portfolio  px-6 lg:px-12 xl:px-20">
+    <div className="portfolio  px-6 lg:px-12 lg:mt-24 xl:px-20">
       <Head>
         <title>Salik Ansari - Portfolio</title>
       </Head>

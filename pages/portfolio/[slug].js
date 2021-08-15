@@ -7,7 +7,7 @@ import ImageGallery from "../../components/ImageGallery";
 
 const ProjectPage = ({ project }) => {
   return (
-    <main className="px-5 py-5 md:px-16 lg:px-24 xl:px-48 2xl:px-52 lg:py-0">
+    <main className="px-5 py-5 md:px-16 lg:px-24 lg:mt-24 xl:px-48 2xl:px-52 lg:py-0">
       <Head>
         <title>Project - {project.name}</title>
       </Head>

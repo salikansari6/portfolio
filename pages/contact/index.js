@@ -48,7 +48,7 @@ const Contact = () => {
       });
   };
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col lg:mt-24 justify-center items-center">
       <Head>
         <title>Salik Ansari - Contact Me</title>
       </Head>

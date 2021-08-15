@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <SnackbarContextProvider>
       <Layout>
-        <div className="py-20 lg:py-24 xl:py-36 min-h-screen">
+        <div className="py-20  xl:py-24 2xl:py-10 min-h-screen">
           <Component {...pageProps} />
         </div>
       </Layout>

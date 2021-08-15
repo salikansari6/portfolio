@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import DownArrow from "./icons/DownArrow";
 
 const ImageGallery = ({ images }) => {
   const [currentImage, setCurrentImage] = useState(images[0]);

@@ -11,11 +11,11 @@ export default function Home({ projects }) {
         <title>Salik Ansari - Full Stack Developer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="py-5 lg:py-20 lg:pt-0  lg:px-20 xl:px-38 2xl:px-64">
-        <div className="hero flex flex-col items-center  lg:flex-row justify-between lg:items-center">
+      <main className="py-5 lg:py-20 lg:pt-0  lg:px-20 2xl:px-52 3xl:px-64">
+        <div className="hero flex flex-col items-center mx-auto lg:flex-row justify-between xl:w-full 3xl:w-full lg:items-center">
           <div
             data-aos="fade-right"
-            className="intro text-center w-5/6 lg:text-left lg:w-1/2 lg:mt-32"
+            className="intro text-center px-8 lg:px-0 w-full lg:text-left lg:w-1/2 lg:mt-32"
           >
             <div className="bg-purple-50 rounded shadow p-2 lg:bg-transparent lg:shadow-none">
               <p className="name text-2xl  md:text-4xl lg:text-7xl">
@@ -36,13 +36,22 @@ export default function Home({ projects }) {
               great User Exprience
             </p>
           </div>
-          <img
-            data-aos="fade-left"
-            src="/images/hero_image.png"
-            className="h-56  md:h-72 order-first lg:order-last  lg:w-1/3 lg:h-2/3 opacity-70 filter"
-          />
+          <div className="hero-images order-first lg:order-last lg:pt-0 xl:pt-20">
+            <img
+              data-aos="fade-left"
+              src="/images/hero_image.png"
+              className="h-56 mx-auto md:h-64 lg:h-96 lg:ml-28 opacity-70 filter"
+            />
+            <img
+              src="/images/hero-image.svg"
+              data-aos="fade-right"
+              className="hidden lg:block"
+              alt="illustration"
+              width="400"
+            />
+          </div>
         </div>
-        <div className="spacer h-0 lg:h-36"></div>
+        <div className="spacer h-0 lg:h-20"></div>
         <MyWork projects={projects} />
         <Skills />
       </main>
