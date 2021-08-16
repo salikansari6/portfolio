@@ -12,30 +12,30 @@ const ProjectPage = ({ project }) => {
         <title>Project - {project.name}</title>
       </Head>
       <div className="center-wrap flex justify-center">
-        <div className="inline-block mx-auto p-3 px-10 rounded shadow project-name bg-purple-100  text-2xl text-center mb-5 font-bold lg:text-6xl">
+        <div className="inline-block border border-purple-400  mx-auto p-3 px-10 rounded shadow project-name bg-purple-100  text-2xl text-center mb-5 font-bold lg:text-6xl">
           {project.name}
         </div>
       </div>
       <ImageGallery images={project.images} />
       <div className="project-description  mt-5 ">
-        <h1 className="text-lg  bg-purple-50 inline-block p-1 lg:p-3 rounded shadow font-bold  lg:text-4xl">
+        <h1 className="text-lg  border border-purple-400 bg-purple-50 inline-block p-1 lg:p-3 rounded shadow font-bold  lg:text-4xl">
           Description :
         </h1>
         <div className="lg:grid lg:grid-cols-12">
-          <p className="bg-purple-50 lg:col-start-1 lg:col-span-10 leading-relaxed lg:text-2xl rounded shadow p-5 mt-5">
+          <p className="bg-purple-50 border border-purple-400 lg:col-start-1 lg:col-span-10 leading-relaxed lg:text-2xl rounded shadow p-5 mt-5">
             {project.description}
           </p>
         </div>
       </div>
       <div className="tech-stack-used mt-5">
-        <h1 className="text-lg  bg-purple-50 inline-block p-1 lg:p-3 rounded shadow font-bold  lg:text-4xl">
+        <h1 className="text-lg border border-purple-400 bg-purple-50 inline-block p-1 lg:p-3 rounded shadow font-bold  lg:text-4xl">
           Technology &#38; Tools Used:
         </h1>
         <ul className="list-inside p-5 list-disc text-2xl lg:flex">
           {project.formattedStackNames.map((tech) => {
             return (
               <li className="flex items-center mt-3 lg:mr-5" key={tech}>
-                <div className="h-14 w-14 lg:h-14 lg:w-14 p-2 mr-3 shadow  bg-purple-50  rounded-full">
+                <div className="h-14 w-14 lg:h-14 lg:w-14 p-2 mr-3 shadow  bg-purple-50 border border-purple-400 rounded-full">
                   <Image
                     src={`https://raw.githubusercontent.com/salikansari6/githubProfileReadmeGenerator/main/icons/${tech.toLowerCase()}.svg`}
                     // layout="fill"
@@ -49,7 +49,7 @@ const ProjectPage = ({ project }) => {
           })}
         </ul>
       </div>
-      <div className="project-source flex justify-around py-5 shadow bg-purple-50">
+      <div className="project-source border border-purple-400 flex justify-around py-5 shadow bg-purple-50">
         <a
           href={project.sourceCode}
           target="blank"

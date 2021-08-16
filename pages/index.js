@@ -40,7 +40,7 @@ export default function Home({ projects }) {
             <img
               data-aos="fade-left"
               src="/images/hero_image.png"
-              className="h-56 mx-auto md:h-64 lg:h-96 lg:ml-28 opacity-70 filter"
+              className="my-photo h-56 mx-auto md:h-64 lg:h-96 lg:ml-28 opacity-70 filter"
             />
             <img
               src="/images/hero-image.svg"

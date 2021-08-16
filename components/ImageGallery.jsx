@@ -25,7 +25,7 @@ const ImageGallery = ({ images }) => {
       <div
         className={`current-image h-56 md:h-96 lg:h-auto mb-2 ${
           fadeAnimation ? "animate-fade-in" : ""
-        } col-span-12 row-span-3 lg:h-auto lg:col-span-10 relative lg:row-span-4 border-2 rounded-lg border-purple-200`}
+        } col-span-12 row-span-3 lg:h-auto lg:col-span-10 relative lg:row-span-4 border rounded-lg  border-purple-400`}
       >
         <Image
           src={`/images/${currentImage}`}
@@ -35,7 +35,7 @@ const ImageGallery = ({ images }) => {
           objectPosition="center top"
         />
       </div>
-      <div className="gallery p-2 flex overflow-auto relative lg:pt-12 col-span-12  bg-purple-50  lg:block lg:col-span-2 lg:row-span-4  lg:p-5 shadow rounded ">
+      <div className="gallery p-2 border border-purple-400 flex overflow-auto relative lg:pt-12 col-span-12  bg-purple-50  lg:block lg:col-span-2 lg:row-span-4  lg:p-5 shadow rounded ">
         {images.map((image) => {
           return (
             <div
