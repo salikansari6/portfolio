@@ -93,7 +93,7 @@
 
 .gallery::-webkit-scrollbar {
   width: 6px;
-  height: 6px;
+  height: 4px;
 }
 
 .gallery::-webkit-scrollbar-track {
@@ -105,6 +105,14 @@
   background-image: linear-gradient(180deg, #a622b8 0%, #708ad4 99%);
   box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
   border-radius: 100px;
+}
+
+@media (max-width: 768px) {
+  .gallery::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(90deg, #a622b8 0%, #708ad4 99%);
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+    border-radius: 100px;
+  }
 }
 
 .my-photo {
