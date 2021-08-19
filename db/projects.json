@@ -40,6 +40,30 @@
     "slug": "react-preloader-tmnt"
   },
   {
+    "name": "Biyah Specials",
+    "sourceCode": "https://github.com/salikansari6/bridal-website",
+    "demo": "https://biyahspecials.herokuapp.com",
+    "images": [
+      "biyahspecial1.PNG",
+      "biyahspecial2.PNG",
+      "biyahspecial3.PNG",
+      "biyahspecial4.PNG",
+      "biyahspecial5.PNG",
+      "biyahspecial6.PNG"
+    ],
+    "description": "Created this project to get familiar with the React and Redux ecosystem as well as for learning SCSS. This is a simple UI concept for an e-commerce bridal dressing website. It doesn't have any major CRUD functionality or API requests. The persistance is done using the Local Storage instead of using a database, hence you can clear the local storage for a clean slate. Demonstrated the use of mounting and unmounting animations in React using the help React-Transition-Group library. Displayed Add-to-cart animations, gallery animations, list update and remove animations. Currently only the Homepage and Wedding dresses routes are functional. Other links are WIP or any open-source contributor can contribute to it. This is sort of an incomplete project but has it's well share of displaying Front-End and UI skills. Also this project is currently not mobile responsive",
+    "stack": ["reactjs", "sass", "express", "nodejs", "mongodb", "redux"],
+    "formattedStackNames": [
+      "ReactJS",
+      "SASS",
+      "Express",
+      "NodeJS",
+      "MongoDB",
+      "Redux"
+    ],
+    "slug": "biyahspecials"
+  },
+  {
     "name": "Gym Management Sytem",
     "sourceCode": "https://github.com/salikansari6/Gym-Website",
     "demo": "http://mygym.epizy.com/login.php",
