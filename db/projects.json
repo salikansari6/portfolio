@@ -20,6 +20,16 @@
     "slug": "word-race"
   },
   {
+    "name": "Computer Science Trivia",
+    "sourceCode": "https://github.com/salikansari6/react-trivia",
+    "demo": "https://salikansari6.github.io/react-trivia/",
+    "images": ["cs-trivia-1.png", "cs-trivia-2.png"],
+    "description": "Made a Trivia App in ReactJS using the Open Trivia DB API. Fetches 10 questions related to Computer Science from the API. User can navigate back and forth between questions. At reaching the end the total score of correct answers is shown.",
+    "stack": ["reactjs"],
+    "formattedStackNames": ["ReactJS"],
+    "slug": "react-trivia"
+  },
+  {
     "name": "Github Search Engine",
     "sourceCode": "https://github.com/salikansari6/github-clone-deploy",
     "demo": "https://github-oauth-app.netlify.app/",
