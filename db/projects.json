@@ -5,8 +5,14 @@
     "demo": "https://boardlia.herokuapp.com",
     "images": ["boardlia-home.png", "boardlia-kanban.png"],
     "description": "Kanban Board Task Tracking App made using React, TypeScript and TailwindCSS. This project was made to practice Drag and Drop operations in Web Applications and was inspired by Project Management Applications like Trello, Asana and Notion.This project makes use of the react-dnd-library which aids in implementing Drag & Drop operations in React. Users can Login and add tasks and move them around in different columns with Drag and Drop. The implementation might seem simple but the code for doing to simplest operations when you are working with drag and drop, hover states becomes quite complex. In my opinion, any Front-End Developer or Full-Stack Developer should try making a project like this so they understand how Applications like Notion are made and how complex the architecture actually is. I've hence made the code open source so that developers can refer to it and see the implementation of complex drag and drop operations and take help of it.",
-    "stack": ["reactjs", "nodejs", "express", "mongodb"],
-    "formattedStackNames": ["ReactJS", "NodeJS", "Express", "MongoDB"],
+    "stack": ["reactjs", "typescript", "nodejs", "express", "mongodb"],
+    "formattedStackNames": [
+      "ReactJS",
+      "TypeScript",
+      "NodeJS",
+      "Express",
+      "MongoDB"
+    ],
     "slug": "boardlia"
   },
   {
