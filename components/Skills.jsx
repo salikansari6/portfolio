@@ -27,6 +27,9 @@ const Skills = () => {
             <span className="badge bg-blue-500 text-white flex items-center">
               ReactJS
             </span>
+            <span className="badge bg-gray-700 text-white flex items-center">
+              NextJS
+            </span>
             <span className=" badge bg-yellow-400 ">JavaScript</span>
             <span className="badge bg-pink-500 text-white">SASS</span>
             <span className="badge bg-blue-300">CSS</span>
