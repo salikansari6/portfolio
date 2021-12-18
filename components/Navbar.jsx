@@ -82,7 +82,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <a href="https://drive.google.com/file/d/1bHoC5SYZrB0d_23d8Ut_vcd7ZlR8UXlG/view?usp=sharing">
+            <a href="https://drive.google.com/file/d/1AipKj7Hwfv0by9J4TYLWl4IchfDYD-6z/view?usp=sharing">
               RESUME
             </a>
           </li>
