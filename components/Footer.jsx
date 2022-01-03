@@ -6,7 +6,7 @@ const Footer = () => {
       <footer className="flex flex-wrap items-center justify-between p-3 py-10 m-auto">
         <div className="container mx-auto flex flex-col flex-wrap items-center justify-between">
           <ul className="flex mx-auto text-white text-center">
-            <li className="p-2 cursor-pointer">
+            <li className="p-2">
               <a
                 href="https://github.com/salikansari6"
                 target="blank"
@@ -48,7 +48,7 @@ const Footer = () => {
                 </svg>
               </a>
             </li>
-            <li className="p-2 cursor-pointer">
+            <li className="p-2">
               <a
                 href="https://www.instagram.com/salik.ibn.zulfi/"
                 target="blank"
@@ -69,7 +69,7 @@ const Footer = () => {
                 </svg>
               </a>
             </li>
-            <li className="p-2 cursor-pointer">
+            <li className="p-2">
               <a
                 href="https://twitter.com/SalikAnsari5"
                 target="_blank"
