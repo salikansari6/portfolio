@@ -24,13 +24,9 @@ const Skills = () => {
             Front End :{" "}
           </div>
           <div className="badges-wrappper rounded bg-white p-2 shadow-inner m-2 text-center">
-            <span className="badge bg-blue-500 text-white flex items-center">
-              ReactJS
-            </span>
-            <span className="badge bg-gray-700 text-white flex items-center">
-              NextJS
-            </span>
-            <span className=" badge bg-yellow-400 ">JavaScript</span>
+            <span className="badge bg-blue-500 text-white">ReactJS</span>
+            <span className="badge bg-gray-700 text-white">NextJS</span>
+            <span className="badge bg-yellow-400 ">JavaScript</span>
             <span className="badge bg-pink-500 text-white">SASS</span>
             <span className="badge bg-blue-300">CSS</span>
             <span className="badge bg-red-500 text-white">Rollup</span>
