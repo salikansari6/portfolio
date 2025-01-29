@@ -3,24 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
-    "@tailwindcss/line-clamp": "^0.2.1",
+    "@tailwindcss/line-clamp": "^0.4.4",
     "aos": "^2.3.4",
-    "next": "latest",
-    "next-images": "^1.7.0",
-    "nodemailer": "^6.6.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-hook-form": "^7.8.8",
+    "next": "15.1.6",
+    "next-images": "^1.8.5",
+    "nodemailer": "^6.9.12",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-hook-form": "^7.51.0",
     "react-image-lightbox": "^5.1.4"
   },
   "devDependencies": {
-    "autoprefixer": "^10.0.4",
-    "postcss": "^8.1.10",
-    "tailwindcss": "^2.2.2"
+    "autoprefixer": "^10.4.18",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1"
   }
 }
