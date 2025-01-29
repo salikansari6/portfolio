@@ -2,17 +2,11 @@
   {
     "name": "Boardlia",
     "sourceCode": "https://github.com/salikansari6/kanban-board",
-    "demo": "https://boardlia.herokuapp.com",
+    "demo": "https://boardlia.onrender.com",
     "images": ["boardlia-home.png", "boardlia-kanban.png"],
     "description": "Kanban Board Task Tracking App made using React, TypeScript and TailwindCSS. This project was made to practice Drag and Drop operations in Web Applications and was inspired by Project Management Applications like Trello, Asana and Notion.This project makes use of the react-dnd-library which aids in implementing Drag & Drop operations in React. Users can Login and add tasks and move them around in different columns with Drag and Drop. The implementation might seem simple but the code for doing to simplest operations when you are working with drag and drop, hover states becomes quite complex. In my opinion, any Front-End Developer or Full-Stack Developer should try making a project like this so they understand how Applications like Notion are made and how complex the architecture actually is. I've hence made the code open source so that developers can refer to it and see the implementation of complex drag and drop operations and take help of it.",
     "stack": ["reactjs", "typescript", "nodejs", "express", "mongodb"],
-    "formattedStackNames": [
-      "ReactJS",
-      "TypeScript",
-      "NodeJS",
-      "Express",
-      "MongoDB"
-    ],
+    "formattedStackNames": ["ReactJS", "TypeScript", "NodeJS", "Express", "MongoDB"],
     "slug": "boardlia"
   },
   {
@@ -69,28 +63,14 @@
     ],
     "description": "Created this project to get familiar with the React and Redux ecosystem as well as for learning SCSS. This is a simple UI concept for an e-commerce bridal dressing website. It doesn't have any major CRUD functionality or API requests. The persistance is done using the Local Storage instead of using a database, hence you can clear the local storage for a clean slate. Demonstrated the use of mounting and unmounting animations in React using the help React-Transition-Group library. Displayed Add-to-cart animations, gallery animations, list update and remove animations. Currently only the Homepage and Wedding dresses routes are functional. Other links are WIP or any open-source contributor can contribute to it. This is sort of an incomplete project but has it's well share of displaying Front-End and UI skills. Also this project is currently not mobile responsive",
     "stack": ["reactjs", "sass", "express", "nodejs", "mongodb", "redux"],
-    "formattedStackNames": [
-      "ReactJS",
-      "SASS",
-      "Express",
-      "NodeJS",
-      "MongoDB",
-      "Redux"
-    ],
+    "formattedStackNames": ["ReactJS", "SASS", "Express", "NodeJS", "MongoDB", "Redux"],
     "slug": "biyahspecials"
   },
   {
     "name": "Gym Management Sytem",
     "sourceCode": "https://github.com/salikansari6/Gym-Website",
     "demo": "http://mygym.epizy.com/login.php",
-    "images": [
-      "gym1.PNG",
-      "gym2.PNG",
-      "gym3.PNG",
-      "gym4.PNG",
-      "gym5.PNG",
-      "gym6.PNG"
-    ],
+    "images": ["gym1.PNG", "gym2.PNG", "gym3.PNG", "gym4.PNG", "gym5.PNG", "gym6.PNG"],
     "description": "Dynamic website created with PHP for gym management system",
     "stack": ["html", "css", "php", "mysql"],
     "formattedStackNames": ["HTML", "CSS", "PHP", "MySQL"],

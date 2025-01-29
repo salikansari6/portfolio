@@ -1,26 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @tailwind screens;
 
 :root {
-  --primary: #84cc16;
-  --primary-dark: #65a30d;
-  --primary-light: #d9f99d;
-  --dark: #0f172a;
-  --dark-light: #1e293b;
-  --dark-lighter: #3f3f46;
+  --primary: #3b82f6;      /* Blue-500 */
+  --primary-dark: #2563eb; /* Blue-600 */
+  --primary-light: #93c5fd; /* Blue-300 */
+  --dark: #020617;         /* Darker blue */
+  --dark-light: #0f172a;   /* Dark blue */
+  --dark-lighter: #1e293b; /* Slate blue */
   --text: #f8fafc;
   --text-secondary: #94a3b8;
 }
 
 * {
-  font-family: "Nunito", sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 body {
-  @apply bg-dark text-zinc-100;
+  background: linear-gradient(135deg, var(--dark) 0%, #0f172a 50%, #1e293b 100%);
+  @apply text-zinc-100;
 }
 
 .active {
@@ -149,4 +149,17 @@ body {
 /* Update form inputs */
 .form-input {
   @apply bg-dark-light border-dark-lighter focus:border-primary text-zinc-100 rounded;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add this after your existing styles */
+.section-nav a {
+  @apply transition-colors duration-300;
+}
+
+.section-nav a:hover {
+  @apply text-primary;
 }

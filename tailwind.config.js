@@ -9,15 +9,21 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#84cc16', // lime-500
-          dark: '#65a30d',    // lime-600
-          light: '#d9f99d',   // lime-200
+          DEFAULT: '#3b82f6', // Blue-500
+          dark: '#2563eb',    // Blue-600
+          light: '#93c5fd',   // Blue-300
         },
         dark: {
-          DEFAULT: '#18181b', // zinc-900
-          light: '#27272a',   // zinc-800
-          lighter: '#3f3f46', // zinc-700
+          DEFAULT: '#020617', // Darker blue
+          light: '#0f172a',   // Dark blue
+          lighter: '#1e293b', // Slate blue
         },
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-dark': 'linear-gradient(135deg, #020617 0%, #0f172a 50%, #1e293b 100%)',
+        'gradient-card': 'linear-gradient(rgba(15, 23, 42, 0.5), rgba(2, 6, 23, 0.8))',
+        'gradient-hover': 'linear-gradient(rgba(15, 23, 42, 0.7), rgba(2, 6, 23, 0.9))',
       },
       screens: {
         "3xl": "1600px",
@@ -30,9 +36,6 @@ module.exports = {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
-      },
-      translate: {
-        nav: "1000px",
       },
     },
   },
