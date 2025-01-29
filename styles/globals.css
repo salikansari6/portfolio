@@ -4,18 +4,19 @@
 @tailwind screens;
 
 :root {
-  --primary: #3b82f6;      /* Blue-500 */
+  --primary: #3b82f6; /* Blue-500 */
   --primary-dark: #2563eb; /* Blue-600 */
   --primary-light: #93c5fd; /* Blue-300 */
-  --dark: #020617;         /* Darker blue */
-  --dark-light: #0f172a;   /* Dark blue */
+  --dark: #020617; /* Darker blue */
+  --dark-light: #0f172a; /* Dark blue */
   --dark-lighter: #1e293b; /* Slate blue */
   --text: #f8fafc;
   --text-secondary: #94a3b8;
 }
 
 * {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
 }
 
 body {
@@ -108,7 +109,7 @@ body {
 
 .gallery::-webkit-scrollbar {
   width: 6px;
-  height: 4px;
+  height: 6px;
 }
 
 .gallery::-webkit-scrollbar-track {
@@ -117,6 +118,13 @@ body {
 
 .gallery::-webkit-scrollbar-thumb {
   @apply bg-primary rounded-full;
+}
+
+@media (max-width: 1024px) {
+  .gallery {
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 @media (max-width: 768px) {
@@ -128,8 +136,7 @@ body {
 }
 
 .my-photo {
-  filter: invert(10%) sepia(50%) saturate(130%) hue-rotate(250deg)
-    brightness(99%) contrast(94%);
+  filter: invert(10%) sepia(50%) saturate(130%) hue-rotate(250deg) brightness(99%) contrast(94%);
 }
 
 /* Update project cards */

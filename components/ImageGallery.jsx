@@ -1,7 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
-import Image from "next/image";
-import Lightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css";
+'use client';
+import Image from 'next/image';
+import { useEffect, useState } from 'react';
+import Lightbox from 'react-image-lightbox';
+import 'react-image-lightbox/style.css';
 
 const ImageGallery = ({ images }) => {
   const [currentImage, setCurrentImage] = useState(images[0]);
@@ -25,66 +26,53 @@ const ImageGallery = ({ images }) => {
   }, [currentImage]);
 
   return (
-    <div className="image-gallery block lg:grid lg:grid-cols-12 lg:grid-rows-4 gap-5 cursor-pointer">
+    <div className="block lg:grid lg:grid-cols-12 gap-5">
       {isOpen && (
         <Lightbox
           mainSrc={`/images/` + images[photoIndex]}
-          nextSrc={"/images/" + images[(photoIndex + 1) % images.length]}
-          prevSrc={
-            "/images/" +
-            images[(photoIndex + images.length - 1) % images.length]
-          }
+          nextSrc={'/images/' + images[(photoIndex + 1) % images.length]}
+          prevSrc={'/images/' + images[(photoIndex + images.length - 1) % images.length]}
           onCloseRequest={() => setIsOpen(false)}
-          onMovePrevRequest={() =>
-            setPhotoIndex((photoIndex + images.length - 1) % images.length)
-          }
-          onMoveNextRequest={() =>
-            setPhotoIndex((photoIndex + 1) % images.length)
-          }
+          onMovePrevRequest={() => setPhotoIndex((photoIndex + images.length - 1) % images.length)}
+          onMoveNextRequest={() => setPhotoIndex((photoIndex + 1) % images.length)}
         />
       )}
       <div
         onClick={() => {
           setIsOpen(true);
         }}
-        className={`current-image h-56 md:h-96 lg:h-auto mb-2 ${
-          fadeAnimation ? "animate-fade-in" : ""
-        } col-span-12 row-span-3 lg:h-auto lg:col-span-10 relative lg:row-span-4 border rounded-lg  border-purple-400`}
+        className={`relative aspect-video mb-5 lg:mb-0 lg:col-span-10 rounded-lg overflow-hidden border border-dark-lighter ${
+          fadeAnimation ? 'animate-fade-in' : ''
+        }`}
       >
         <Image
           src={`/images/${currentImage}`}
           layout="fill"
-          className="rounded"
-          objectFit="cover"
-          objectPosition="center top"
+          className="rounded object-contain"
+          alt="Project screenshot"
         />
       </div>
-      <div className="gallery p-2 border border-purple-400 flex overflow-auto relative lg:pt-12 col-span-12  bg-purple-50  lg:block lg:col-span-2 lg:row-span-4  lg:p-5 shadow rounded ">
-        {images.map((image, index) => {
-          return (
-            <div
-              key={image}
-              className={`gallery-item   flex-shrink-0 ml-5 lg:ml-0  h-20 relative w-32  lg:w-auto  rounded-lg   lg:mb-3 xl:h-20 2xl:h-36 cursor-pointer ${
-                image === currentImage
-                  ? "border-2 border-purple-700"
-                  : "border border-purple-200"
-              }`}
-              onClick={() => {
-                changeImage(image);
-                setPhotoIndex(index);
-              }}
-            >
-              <Image
-                src={`/images/${image}`}
-                layout="fill"
-                className="rounded-lg"
-                objectFit="cover"
-                objectPosition="center"
-              />
-              ;
-            </div>
-          );
-        })}
+
+      <div className="gallery flex lg:flex-col items-center gap-4 overflow-x-auto lg:overflow-y-auto lg:col-span-2 p-4 bg-dark-light/50 rounded-lg border border-dark-lighter">
+        {images.map((image, index) => (
+          <div
+            key={image}
+            className={`relative w-full h-24 flex-shrink-0 rounded-lg overflow-hidden cursor-pointer ${
+              image === currentImage ? 'ring-2 ring-primary' : ''
+            }`}
+            onClick={() => {
+              changeImage(image);
+              setPhotoIndex(index);
+            }}
+          >
+            <Image
+              src={`/images/${image}`}
+              layout="fill"
+              className="object-cover"
+              alt={`Project screenshot ${index + 1}`}
+            />
+          </div>
+        ))}
       </div>
     </div>
   );
