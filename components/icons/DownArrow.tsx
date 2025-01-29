@@ -1,6 +1,4 @@
-import React from "react";
-
-const DownArrow = ({ className }) => {
+const DownArrow = ({ className }: { className: string }) => {
   return (
     <svg
       className={className}

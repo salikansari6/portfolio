@@ -1,7 +1,6 @@
 'use client';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import React from 'react';
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -24,7 +23,7 @@ const Navbar = () => {
           </Link>
 
           <Link
-            href="#experience"
+            href="/#experience"
             className={`text-zinc-400 hover:text-primary transition-colors ${
               pathname === '/experience' ? 'text-primary' : ''
             }`}
@@ -32,7 +31,7 @@ const Navbar = () => {
             Experience
           </Link>
           <Link
-            href="#skills"
+            href="/#skills"
             className={`text-zinc-400 hover:text-primary transition-colors ${
               pathname === '/skills' ? 'text-primary' : ''
             }`}

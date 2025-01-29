@@ -1,20 +1,10 @@
+import { Project as ProjectType } from '@/types';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
-import { Project as ProjectType } from '../types';
-
-const Project: React.FC<ProjectType> = ({
-  name,
-  images,
-  description,
-  sourceCode,
-  demo,
-  stack,
-  slug,
-}) => {
+const Project = ({ name, images, description, sourceCode, demo, stack, slug }: ProjectType) => {
   return (
     <Link href={`/portfolio/${slug}`}>
-      <div className="group bg-gradient-card backdrop-blur-sm border border-dark-lighter/50 hover:border-primary rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-primary/5">
+      <div className="group bg-dark-light/50 backdrop-blur-sm border border-dark-lighter hover:border-primary rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-primary/5">
         <div className="relative h-64 overflow-hidden">
           <Image
             src={`/images/${images[0]}`}

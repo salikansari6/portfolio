@@ -1,9 +1,8 @@
+import { Project as ProjectType } from '@/types';
 import Link from 'next/link';
-import React from 'react';
 import SeeMoreIcon from './icons/SeeMoreIcon';
 import Project from './Project';
-
-const ProjectList = ({ projects, seeMore }) => {
+const ProjectList = ({ projects, seeMore }: { projects: ProjectType[]; seeMore: boolean }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
       {projects.map((project) => (

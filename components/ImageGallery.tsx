@@ -4,13 +4,13 @@ import { useEffect, useState } from 'react';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 
-const ImageGallery = ({ images }) => {
+const ImageGallery = ({ images }: { images: string[] }) => {
   const [currentImage, setCurrentImage] = useState(images[0]);
   const [fadeAnimation, setFadeAnimation] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
 
-  const changeImage = (image) => {
+  const changeImage = (image: string) => {
     setCurrentImage(image);
     setFadeAnimation(true);
   };
