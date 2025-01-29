@@ -1,15 +1,20 @@
 'use client';
+import dayjs from 'dayjs';
+import duration from 'dayjs/plugin/duration';
+import relativeTime from 'dayjs/plugin/relativeTime';
 import { FaBriefcase, FaGraduationCap } from 'react-icons/fa';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
+dayjs.extend(duration);
+dayjs.extend(relativeTime);
 const Experience = () => {
   const experiences = [
     {
       title: 'Software Development Engineer II',
       company: 'Procedure',
       location: 'Mumbai, India',
-      date: 'May 2023 - Present',
+      startDate: 'May 2023',
       techStack: [
         'React',
         'TypeScript',
@@ -61,7 +66,8 @@ const Experience = () => {
       title: 'Software Development Engineer I',
       company: 'Procedure',
       location: 'Mumbai, India',
-      date: 'Jan 2022 - May 2023',
+      startDate: 'Jan 2022',
+      endDate: 'May 2023',
       techStack: ['React', 'TypeScript', 'Next.js', 'Node.js', 'CSS', 'TailwindCSS'],
       description: (
         <ul className="list-disc p-4">
@@ -95,7 +101,8 @@ const Experience = () => {
       title: 'Frontend Web Developer',
       company: 'Incepthink',
       location: 'Mumbai, India',
-      date: 'Oct 2021 - Dec 2021',
+      startDate: 'Oct 2021',
+      endDate: 'Dec 2021',
       techStack: ['React', 'TypeScript', 'Framer Motion', 'Next.js'],
       description: (
         <ul className="list-disc p-4">
@@ -118,6 +125,20 @@ const Experience = () => {
     },
   ];
 
+  function getDuration(startDate: string, endDate: string | undefined) {
+    const start = dayjs(startDate);
+    const end = endDate ? dayjs(endDate) : dayjs();
+    const durationInMonths = end.diff(start, 'month');
+    const years = Math.floor(durationInMonths / 12);
+    const months = durationInMonths % 12;
+
+    if (years === 0) {
+      return `${months} month${months !== 1 ? 's' : ''}`;
+    }
+
+    return `${years} year${years !== 1 ? 's' : ''} ${months} month${months !== 1 ? 's' : ''}`;
+  }
+
   return (
     <VerticalTimeline layout="1-column-left" lineColor="rgba(148, 163, 184, 0.2)">
       {experiences.map((exp, index) => (
@@ -131,7 +152,10 @@ const Experience = () => {
             boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
           }}
           contentArrowStyle={{ borderRight: '7px solid rgba(59, 130, 246, 0.2)' }}
-          date={exp.date}
+          date={
+            `${exp.startDate} - ${exp.endDate || 'Present'} · ` +
+            getDuration(exp.startDate, exp.endDate)
+          }
           dateClassName="text-zinc-400"
           iconStyle={{
             background: exp.icon === 'work' ? '#3b82f6' : '#8b5cf6',
