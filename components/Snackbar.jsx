@@ -1,3 +1,4 @@
+'use client'
 import React, { useContext, useEffect, useState } from "react";
 import SnackbarContext from "../contexts/SnackbarContext";
 const Snackbar = ({ title, message, status }) => {
@@ -19,22 +20,25 @@ const Snackbar = ({ title, message, status }) => {
   const statusColors = (status) => {
     switch (status) {
       case "error":
-        return "red";
+        return "bg-red-500";
       case "success":
-        return "green";
+        return "bg-primary";
       case "pending":
-        return "blue";
+        return "bg-dark-lighter";
+      default:
+        return "bg-dark-lighter";
     }
   };
 
   return (
     <div
-      className="snackbar"
-      style={{ background: statusColors(status) }}
+      className={`fixed bottom-0 left-0 w-full p-4 ${statusColors(status)} text-zinc-100 shadow-lg transform transition-transform duration-200 ease-in-out`}
       onClick={hideSnackbar}
     >
-      <div className="snackbar__title">{title}</div>
-      <div className="snackbar__message">{message}</div>
+      <div className="max-w-7xl mx-auto flex justify-between items-center">
+        <div className="font-semibold">{title}</div>
+        <div className="text-zinc-200">{message}</div>
+      </div>
     </div>
   );
 };

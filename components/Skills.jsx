@@ -1,3 +1,4 @@
+'use client'
 import React, { useEffect } from "react";
 // import AOS from "aos";
 
@@ -8,56 +9,45 @@ const Skills = () => {
   //     });
   //   }, []);
 
+  const frontendSkills = ["ReactJS", "NextJS", "JavaScript", "SASS", "CSS", "Rollup", "Storybook"];
+
   return (
-    <div className="skills p-10 md:p-20 lg:p-0">
-      <div className="center-wrap flex justify-center">
-        <div className="text-xl lg:text-4xl text-center border border-purple-500 text-purple-700 font-bold bg-purple-50 inline-block p-3 rounded shadow">
-          Technology and Tools I've worked with :
-        </div>
-      </div>
-      <div className="skills-wrapper grid lg:grid-cols-3 p-2 lg:p-5  gap-10">
-        <div
+    <div className="skills px-8 py-16 lg:px-0">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div 
           data-aos="fade-up"
-          className="front-end py-3  bg-purple-300 shadow  lg:p-5 rounded  grid place-items-center content-start "
+          className="bg-dark-light border border-dark-lighter hover:border-primary rounded-xl p-6 transition-colors"
         >
-          <div className="text-lg leading-relaxed bg-purple-600 text-white inline-block font-bold p-2 rounded">
-            Front End :{" "}
-          </div>
-          <div className="badges-wrappper rounded bg-white p-2 shadow-inner m-2 text-center">
-            <span className="badge bg-blue-500 text-white">ReactJS</span>
-            <span className="badge bg-gray-700 text-white">NextJS</span>
-            <span className="badge bg-yellow-400 ">JavaScript</span>
-            <span className="badge bg-pink-500 text-white">SASS</span>
-            <span className="badge bg-blue-300">CSS</span>
-            <span className="badge bg-red-500 text-white">Rollup</span>
-            <span className="badge bg-pink-300">Storybook</span>
+          <h3 className="text-lg font-semibold text-primary mb-4">Frontend</h3>
+          <div className="flex flex-wrap gap-2">
+            <span className="badge bg-dark text-primary-light">React</span>
+            <span className="badge bg-dark text-primary-light">Next.js</span>
+            <span className="badge bg-dark text-primary-light">TypeScript</span>
+            <span className="badge bg-dark text-primary-light">Tailwind</span>
           </div>
         </div>
-        <div
+
+        <div 
           data-aos="fade-up"
-          className="back-end py-3  bg-purple-300 shadow  lg:p-5 rounded  grid place-items-center content-start"
+          className="bg-dark-light border border-dark-lighter hover:border-primary rounded-xl p-6 transition-colors"
         >
-          <div className="text-lg leading-relaxed bg-purple-600 text-white inline-block font-bold p-2 rounded">
-            Back End :{" "}
-          </div>
-          <div className="badges-wrappper rounded bg-white p-2 shadow-inner m-2 text-center">
-            <span className="badge bg-green-700 text-white">NodeJS</span>
-            <span className=" badge bg-black text-white ">Express</span>
-            <span className="badge bg-pink-500 text-white">GraphQL</span>
-            <span className="badge bg-green-300">MongoDB</span>
-            <span className="badge bg-yellow-600 text-white">MySQL</span>
+          <h3 className="text-lg font-semibold text-primary mb-4">Backend</h3>
+          <div className="flex flex-wrap gap-2">
+            <span className="badge bg-dark text-primary-light">Node.js</span>
+            <span className="badge bg-dark text-primary-light">Express</span>
+            <span className="badge bg-dark text-primary-light">GraphQL</span>
+            <span className="badge bg-dark text-primary-light">MongoDB</span>
           </div>
         </div>
-        <div
+
+        <div 
           data-aos="fade-up"
-          className="mobile py-3  bg-purple-300 shadow  lg:p-5 rounded  grid place-items-center content-start"
+          className="bg-dark-light border border-dark-lighter hover:border-primary rounded-xl p-6 transition-colors"
         >
-          <div className="text-lg leading-relaxed bg-purple-600 text-white inline-block font-bold p-2 rounded">
-            Mobile :{" "}
-          </div>
-          <div className="badges-wrappper rounded bg-white p-2 shadow-inner m-2 text-center">
-            <span className="badge bg-blue-700 text-white">React Native</span>
-            <span className=" badge bg-green-600 text-white">Android</span>
+          <h3 className="text-lg font-semibold text-primary mb-4">Mobile</h3>
+          <div className="flex flex-wrap gap-2">
+            <span className="badge bg-dark text-primary-light">React Native</span>
+            <span className="badge bg-dark text-primary-light">Android</span>
           </div>
         </div>
       </div>

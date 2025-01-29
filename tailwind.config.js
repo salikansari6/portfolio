@@ -1,9 +1,24 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  mode: "jit",
-  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   theme: {
     extend: {
+      colors: {
+        primary: {
+          DEFAULT: '#84cc16', // lime-500
+          dark: '#65a30d',    // lime-600
+          light: '#d9f99d',   // lime-200
+        },
+        dark: {
+          DEFAULT: '#18181b', // zinc-900
+          light: '#27272a',   // zinc-800
+          lighter: '#3f3f46', // zinc-700
+        },
+      },
       screens: {
         "3xl": "1600px",
       },
@@ -20,9 +35,6 @@ module.exports = {
         nav: "1000px",
       },
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [require("@tailwindcss/line-clamp")],
 };

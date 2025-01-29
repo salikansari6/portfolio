@@ -11,62 +11,47 @@ const Project = ({
   slug,
 }) => {
   return (
-    <div className="project shadow transition border border-purple-400 duration-200 rounded transform hover:scale-105 hover:shadow-lg   relative">
-      <Link href={`/portfolio/${slug}`}>
-        <a>
-          <div className="project-image shadow-inner h-52 w-full relative rounded-t">
-            <Image
-              src={`/images/${images[0]}`}
-              layout="fill"
-              className="rounded-t"
-              objectFit="cover"
-              objectPosition="top"
-            />
-            <div className="bg-gradient-to-t rounded-t from-transparent via-transparent to-gray-900 absolute inset-0 w-full h-full opacity-50 "></div>
-          </div>
-          <div className="project-details">
-            <div className="project-name p-5 bg-purple-50 text-2xl text-center font-bold">
-              {name}
-            </div>
-            <div className="project-description p-5 text-md lg:text-lg h-50 shadow-inner">
-              <p className="line-clamp-3">{description}</p>
-            </div>
-          </div>
-        </a>
-      </Link>
-      <div className="project-source flex justify-around py-5 shadow-inner">
-        <a
-          href={sourceCode}
-          target="blank"
-          rel="noreferrer"
-          className="source-code bg-red-400 shadow w-1/3 p-2  flex items-center justify-center text-center text-white font-bold rounded"
-        >
-          Source Code <span className="font-black">&lt;/&gt;</span>
-        </a>
-        <a
-          href={demo}
-          target="blank"
-          rel="noreferrer"
-          className="bg-red-400  text-white shadow w-1/3 p-2 flex items-center justify-center text-center font-bold rounded"
-        >
-          Demo
-        </a>
+    <div className="group bg-dark-light/50 backdrop-blur-sm border border-dark-lighter hover:border-primary rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-primary/5">
+      <div className="relative h-64 overflow-hidden">
+        <Image
+          src={`/images/${images[0]}`}
+          layout="fill"
+          objectFit="cover"
+          className="transform group-hover:scale-105 transition-transform duration-500"
+          alt={name}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-dark-light/90 to-transparent" />
       </div>
-      <div className="stack flex justify-end absolute -top-10 right-0">
-        {stack.map((tech) => {
-          return (
-            <div
-              className="h-14 w-14 lg:h-16 lg:w-16 p-3 shadow border border-purple-500 -ml-3 bg-purple-50 opacity-90 rounded-full"
-              key={tech}
+      
+      <div className="p-8">
+        <h3 className="text-2xl font-bold text-zinc-100 mb-3">{name}</h3>
+        <p className="text-zinc-400 mb-6 line-clamp-2">{description}</p>
+        
+        <div className="flex flex-wrap gap-2 mb-8">
+          {stack.map((tech) => (
+            <span 
+              key={tech} 
+              className="px-3 py-1 text-sm font-medium bg-dark/50 text-primary-light rounded-full border border-dark-lighter"
             >
-              <Image
-                src={`https://raw.githubusercontent.com/salikansari6/githubProfileReadmeGenerator/main/icons/${tech}.svg`}
-                height={50}
-                width={50}
-              />
-            </div>
-          );
-        })}
+              {tech}
+            </span>
+          ))}
+        </div>
+        
+        <div className="flex gap-4">
+          <a 
+            href={sourceCode}
+            className="flex-1 py-3 px-4 text-center font-medium border border-primary text-primary hover:bg-primary/10 rounded-lg transition-colors"
+          >
+            View Code
+          </a>
+          <a 
+            href={demo}
+            className="flex-1 py-3 px-4 text-center font-medium bg-primary hover:bg-primary-dark text-dark rounded-lg transition-colors"
+          >
+            Live Demo
+          </a>
+        </div>
       </div>
     </div>
   );

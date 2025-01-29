@@ -4,16 +4,31 @@
 @tailwind utilities;
 @tailwind screens;
 
+:root {
+  --primary: #84cc16;
+  --primary-dark: #65a30d;
+  --primary-light: #d9f99d;
+  --dark: #0f172a;
+  --dark-light: #1e293b;
+  --dark-lighter: #3f3f46;
+  --text: #f8fafc;
+  --text-secondary: #94a3b8;
+}
+
 * {
   font-family: "Nunito", sans-serif;
 }
 
+body {
+  @apply bg-dark text-zinc-100;
+}
+
 .active {
-  @apply border-white border-b-4  pb-2;
+  @apply text-primary;
 }
 
 .badge {
-  @apply inline-block py-2 px-3 font-bold ml-2 rounded-full mt-2 shadow;
+  @apply inline-block py-2 px-3 font-bold ml-2 rounded-full mt-2 shadow bg-dark-lighter text-primary-light;
 }
 
 .image-gallery {
@@ -97,14 +112,11 @@
 }
 
 .gallery::-webkit-scrollbar-track {
-  background-color: #e4e4e4;
-  border-radius: 100px;
+  @apply bg-dark-lighter rounded-full;
 }
 
 .gallery::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(180deg, #a622b8 0%, #708ad4 99%);
-  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
-  border-radius: 100px;
+  @apply bg-primary rounded-full;
 }
 
 @media (max-width: 768px) {
@@ -118,4 +130,23 @@
 .my-photo {
   filter: invert(10%) sepia(50%) saturate(130%) hue-rotate(250deg)
     brightness(99%) contrast(94%);
+}
+
+/* Update project cards */
+.project {
+  @apply bg-dark-light border-primary hover:border-primary-light;
+}
+
+/* Update buttons */
+.btn-primary {
+  @apply bg-primary hover:bg-primary-dark text-dark font-bold py-2 px-4 rounded transition-colors;
+}
+
+.btn-secondary {
+  @apply bg-dark-lighter hover:bg-dark-light text-primary-light font-bold py-2 px-4 rounded border border-primary transition-colors;
+}
+
+/* Update form inputs */
+.form-input {
+  @apply bg-dark-light border-dark-lighter focus:border-primary text-zinc-100 rounded;
 }
