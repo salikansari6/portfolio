@@ -32,10 +32,10 @@ export default async function Home() {
 
             <div className="flex space-x-4">
               <a
-                href="#skills"
+                href="#experience"
                 className="inline-flex items-center px-6 py-3 rounded-md bg-primary hover:bg-primary-dark text-dark font-medium transition-colors"
               >
-                View My Skills
+                View My Experience
                 <svg
                   className="ml-2 w-5 h-5 animate-bounce"
                   fill="none"
@@ -101,7 +101,7 @@ export default async function Home() {
       <section id="skills" className="min-h-48 flex items-center px-6 lg:px-12 bg-dark-light/50">
         <div className="max-w-7xl mx-auto w-full py-24">
           <h2 className="text-4xl lg:text-5xl font-bold text-center mb-16">
-            My <span className="text-primary">Skills</span>
+            <span className="text-primary">Skills</span>
           </h2>
           <Skills />
         </div>

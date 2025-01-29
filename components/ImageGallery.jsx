@@ -57,7 +57,7 @@ const ImageGallery = ({ images }) => {
         {images.map((image, index) => (
           <div
             key={image}
-            className={`relative w-full h-24 flex-shrink-0 rounded-lg overflow-hidden cursor-pointer ${
+            className={`relative w-28 lg:w-full h-24 flex-shrink-0 rounded-lg overflow-hidden cursor-pointer ${
               image === currentImage ? 'ring-2 ring-primary' : ''
             }`}
             onClick={() => {

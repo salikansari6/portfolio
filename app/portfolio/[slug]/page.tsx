@@ -3,7 +3,8 @@ import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 import ImageGallery from '../../../components/ImageGallery';
 import { getProject, getProjects } from '../../../lib/projects';
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
+export async function generateMetadata(props: { params: Promise<{ slug: string }> }) {
+  const params = await props.params;
   const project = await getProject(params.slug);
   if (!project) {
     return {
@@ -17,7 +18,8 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-export default async function ProjectPage({ params }: { params: { slug: string } }) {
+export default async function ProjectPage(props: { params: Promise<{ slug: string }> }) {
+  const params = await props.params;
   const project = await getProject(params.slug);
 
   if (!project) {

@@ -24,7 +24,15 @@ const Navbar = () => {
           </Link>
 
           <Link
-            href="/skills"
+            href="#experience"
+            className={`text-zinc-400 hover:text-primary transition-colors ${
+              pathname === '/experience' ? 'text-primary' : ''
+            }`}
+          >
+            Experience
+          </Link>
+          <Link
+            href="#skills"
             className={`text-zinc-400 hover:text-primary transition-colors ${
               pathname === '/skills' ? 'text-primary' : ''
             }`}

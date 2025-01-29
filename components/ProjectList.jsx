@@ -1,7 +1,7 @@
-import Link from "next/link";
-import React from "react";
-import SeeMoreIcon from "./icons/SeeMoreIcon";
-import Project from "./Project";
+import Link from 'next/link';
+import React from 'react';
+import SeeMoreIcon from './icons/SeeMoreIcon';
+import Project from './Project';
 
 const ProjectList = ({ projects, seeMore }) => {
   return (
@@ -11,7 +11,7 @@ const ProjectList = ({ projects, seeMore }) => {
       ))}
       {seeMore && (
         <Link href="/portfolio">
-          <div className="see-more text-2xl h-52 md:h-full  lg:text-4xl border border-purple-500 text-purple-800  flex flex-col justify-center items-center bg-purple-100 shadow transition duration-200 rounded transform hover:scale-105 hover:shadow-lg">
+          <div className="see-more text-2xl h-52 md:h-full lg:text-4xl  flex flex-col justify-center items-center bg-dark-light backdrop-blur-sm shadow transition duration-200 rounded-lg border border-transparent hover:shadow-lg hover:border-primary">
             <p className="mb-5">See more</p>
             <SeeMoreIcon />
           </div>
