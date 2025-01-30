@@ -74,7 +74,7 @@ export default async function Home() {
             </div>
           </div>
 
-          <div className="relative h-[400px] w-[400px] rounded-full overflow-hidden mx-auto">
+          <div className="relative h-[300px] w-[300px] lg:h-[400px] lg:w-[400px] rounded-full overflow-hidden mx-auto">
             <Image
               src="/images/salik_portfolio_hero.jpeg"
               alt="Salik's Portfolio Image"
@@ -88,7 +88,7 @@ export default async function Home() {
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="min-h-screen flex items-center px-6 lg:px-12">
+      <section id="experience" className="min-h-screen flex items-center px-3 lg:px-12">
         <div className="max-w-7xl mx-auto w-full py-24">
           <h2 className="text-4xl lg:text-5xl font-bold text-center mb-16">
             My <span className="text-primary">Experience</span>

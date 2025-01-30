@@ -3,7 +3,7 @@ import ProjectList from './ProjectList';
 
 const MyWork = ({ projects }: { projects: Project[] }) => {
   return (
-    <div className="my-work mt-12 px-8 lg:px-0">
+    <div className="my-work mt-12">
       <ProjectList projects={projects.slice(0, 3)} seeMore={true} />
     </div>
   );
