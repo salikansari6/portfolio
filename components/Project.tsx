@@ -1,6 +1,7 @@
 import { Project as ProjectType } from '@/types';
 import Image from 'next/image';
 import Link from 'next/link';
+import Markdown from 'react-markdown';
 const Project = ({ name, images, description, sourceCode, demo, stack, slug }: ProjectType) => {
   return (
     <Link href={`/portfolio/${slug}`}>
@@ -18,8 +19,9 @@ const Project = ({ name, images, description, sourceCode, demo, stack, slug }: P
 
         <div className="p-8">
           <h3 className="text-2xl font-bold text-zinc-100 mb-3">{name}</h3>
-          <p className="text-zinc-400 mb-6 line-clamp-2">{description}</p>
-
+          <div className="text-zinc-400 mb-6 line-clamp-2">
+            <Markdown>{description}</Markdown>
+          </div>
           <div className="flex flex-wrap gap-2 mb-8">
             {stack.map((tech) => (
               <span

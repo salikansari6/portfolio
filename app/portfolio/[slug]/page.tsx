@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
+import Markdown from 'react-markdown';
 import ImageGallery from '../../../components/ImageGallery';
 import { getProject, getProjects } from '../../../lib/projects';
 
@@ -86,9 +87,9 @@ export default async function ProjectPage(props: { params: Promise<{ slug: strin
         <div className="max-w-4xl mx-auto mb-16">
           <h2 className="text-2xl font-bold text-zinc-100 mb-4">About the Project</h2>
           <div className="prose prose-invert prose-zinc max-w-none">
-            <p className="text-zinc-400 leading-relaxed whitespace-pre-wrap">
-              {project.description}
-            </p>
+            <div className="text-zinc-400 whitespace-pre-wrap">
+              <Markdown>{project.description}</Markdown>
+            </div>
           </div>
         </div>
 

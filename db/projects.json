@@ -1,5 +1,25 @@
 [
   {
+    "name": "ChainConnect",
+    "sourceCode": "https://github.com/salikansari6/cross-blockchain-messaging",
+    "demo": "https://cross-blockchain-messaging.vercel.app/",
+    "images": [
+      "cross1.png",
+      "cross2.png",
+      "cross3.png",
+      "cross4.png",
+      "cross5.png",
+      "cross6.png",
+      "cross7.png",
+      "cross8.png"
+    ],
+
+    "description": "# Cross-Chain Messaging App  \n**(Ethereum Sepolia ↔ Polygon Amoy using Hyperlane)**\n\n## Overview  \nThis project is a blockchain-based messaging app that lets users send messages between two different blockchains: Ethereum's Sepolia testnet and Polygon's Amoy testnet. It uses Hyperlane, a cross-chain communication protocol, to make this possible.\n\n---\n\n## What It Does\n- ✅ **Send Messages Across Blockchains**  \n  You can send a message from one test network (like Sepolia) to another (like Amoy), even though they are separate blockchains.\n\n- 🔁 **Live Message Tracking**  \n  Once a message is sent, the app checks its delivery status regularly and updates you in real-time (e.g., pending, delivered, failed).\n\n- 🕒 **View Message History**  \n  The app shows a complete list of all sent and received messages, along with timestamps and whether the message was delivered or not.\n\n---\n\n## Why This Project is Useful\n- It demonstrates how different blockchains can “talk” to each other—something that’s becoming more and more important in Web3.\n- Helps developers and testers try out cross-chain features in a safe, low-cost testnet environment.\n- Can be a base for building more complex cross-chain apps, like sending data or tokens between networks.\n\n---\n\n## Built With\n- **Hyperlane** – to handle the actual message sending across chains  \n- **Ethereum Sepolia + Polygon Amoy** – as the two test blockchains  \n- **Smart Contracts + Frontend UI** – to send, receive, track, and show messages  \n- **Polling Logic** – to keep checking if the message arrived on the other chain\n\n---\n\n## What’s Next\n- Add support for more testnets and eventually mainnets  \n- Improve message delivery speed and user experience  \n- Possibly expand to token transfers or other cross-chain use cases",
+    "stack": ["reactjs", "typescript", "hyperlane", "solidity", "ethersjs"],
+    "formattedStackNames": ["ReactJS", "TypeScript", "Hyperlane", "Solidity", "Ethers.js"],
+    "slug": "cross-blockchain-messaging"
+  },
+  {
     "name": "Boardlia",
     "sourceCode": "https://github.com/salikansari6/kanban-board",
     "demo": "https://boardlia.onrender.com",
